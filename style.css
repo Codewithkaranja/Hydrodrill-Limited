@@ -1,7 +1,7 @@
 /* ===== CSS RESET & BASE STYLES ===== */
 :root {
     --primary-color: #006bd6;
-    --secondary-color: #dbae26;
+    --secondary-color:#dbae26;
     --accent-color: #1a8cff;
     --dark-color: #1a1a2e;
     --light-color: #f8f9fa;
@@ -176,9 +176,9 @@ img {
 
 .header.sticky {
     position: fixed;
-    background-color: white;
-    box-shadow: var(--shadow);
-    padding: 15px 0;
+    background-color: transparent;
+   
+   
 }
 
 .navbar {
@@ -187,40 +187,7 @@ img {
     align-items: center;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
 
-.logo-icon {
-    background-color: var(--primary-color);
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-}
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-main {
-    font-family: 'EB Garamond', serif;
-    font-weight: 600;
-    font-size: 1.8rem;
-    color: white;
-}
-
-.logo-sub {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.8);
-}
 
 .header.sticky .logo-main {
     color: var(--primary-color);
@@ -300,84 +267,6 @@ img {
 }
 
 /* ===== HERO SECTION ===== */
-.hero {
-    position: relative;
-    height: 100vh;
-    min-height: 700px;
-}
-
-.hero-swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.hero-slide {
-    display: flex;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    position: relative;
-}
-
-.hero-content {
-    max-width: 800px;
-    color: white;
-    position: relative;
-    z-index: 2;
-}
-
-.hero-title {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
-    color: white;
-    animation: fadeInUp 1s ease-out;
-}
-
-.hero-subtitle {
-    font-size: 1.3rem;
-    margin-bottom: 2.5rem;
-    opacity: 0.9;
-    animation: fadeInUp 1s ease-out 0.2s both;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 20px;
-    animation: fadeInUp 1s ease-out 0.4s both;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transition: var(--transition);
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-    font-size: 1.5rem;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    background-color: var(--primary-color);
-}
-
-.swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: rgba(255, 255, 255, 0.5);
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: var(--primary-color);
-}
 
 /* ===== TRUST INDICATORS ===== */
 .trust-indicators {
@@ -429,6 +318,7 @@ img {
 }
 
 /* ===== ABOUT PREVIEW ===== */
+
 .section-header {
     margin-bottom: 50px;
 }
@@ -437,6 +327,7 @@ img {
     position: relative;
     display: inline-block;
     margin-bottom: 15px;
+    color: var(--primary-color);
 }
 
 .section-title::after {
@@ -455,6 +346,11 @@ img {
     color: var(--gray-color);
     max-width: 600px;
     margin: 0 auto;
+}
+.about-preview{
+    background-color: black;
+    padding: 80px 0;
+    color: rgba(255, 255, 255, 0.865);
 }
 
 .about-grid {
@@ -490,7 +386,7 @@ img {
     bottom: 30px;
     right: 30px;
     background-color: var(--primary-color);
-    color: white;
+    color: rgba(255, 255, 255, 0.916);
     padding: 20px;
     border-radius: 50%;
     text-align: center;
@@ -535,6 +431,9 @@ img {
     gap: 20px;
     margin-top: 30px;
 }
+.about-content h3{
+    color: white;
+}
 
 /* ===== SERVICES SECTION ===== */
 .services-grid {
@@ -544,7 +443,7 @@ img {
 }
 
 .service-card {
-    background-color: white;
+    background-color: black;
     border-radius: var(--border-radius);
     padding: 40px 30px;
     text-align: center;
@@ -568,7 +467,7 @@ img {
     justify-content: center;
     margin: 0 auto 25px;
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     transition: var(--transition);
 }
 
@@ -579,10 +478,11 @@ img {
 
 .service-card h3 {
     margin-bottom: 15px;
+    color: var(--secondary-color);
 }
 
 .service-card p {
-    color: var(--gray-color);
+    color: rgba(255, 255, 255, 0.877);
     margin-bottom: 20px;
 }
 
@@ -600,12 +500,17 @@ img {
 }
 
 /* ===== PROJECTS SHOWCASE ===== */
+.projects-showcase {
+    background-color: black;
+    padding: 80px 0;
+}
 .header-row {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
     gap: 20px;
+    color: yellow;
 }
 
 .projects-grid {
@@ -684,19 +589,15 @@ img {
 }
 
 /* ===== WHY CHOOSE US ===== */
-.why-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
+/* ===== WHY CHOOSE US ===== */
 .why-card {
-    background-color: white;
+    background-color: black;
     border-radius: var(--border-radius);
     padding: 40px 30px;
     text-align: center;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    color: var(--dark-color);
 }
 
 .why-card:hover {
@@ -713,16 +614,51 @@ img {
     justify-content: center;
     margin: 0 auto 25px;
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: var(--warning-color);
 }
 
 .why-card h3 {
     margin-bottom: 15px;
+    color: var(--warning-color);
+    font-weight: 500;
 }
 
 .why-card p {
-    color: var(--gray-color);
+    color: rgba(255, 255, 255, 0.884);
 }
+/* ===== WHY CHOOSE US – SWIPER WRAPPER ===== */
+.why-swiper {
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.why-swiper .swiper-slide {
+    height: auto;
+    display: flex;
+}
+
+/* Pagination styled but neutral */
+.why-pagination {
+    bottom: 10px !important;
+}
+
+.why-pagination .swiper-pagination-bullet {
+    background: var(--primary-color);
+    opacity: 0.35;
+}
+
+.why-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Remove hover lift on touch devices */
+@media (hover: none) {
+    .why-card:hover {
+        transform: none;
+    }
+}
+
 
 /* ===== CTA SECTION ===== */
 .cta-section {
@@ -757,7 +693,7 @@ img {
 
 /* ===== FOOTER ===== */
 .footer {
-    background-color: var(--dark-color);
+    background-color: black;
     color: white;
     padding: 80px 0 0;
 }
@@ -808,7 +744,7 @@ img {
 }
 
 .footer-col h3 {
-    color: white;
+    color: var(--warning-color);
     font-size: 1.5rem;
     margin-bottom: 25px;
     position: relative;

@@ -7,17 +7,17 @@
         }
         
         .logo-image {
-            max-height: 60px;
+            max-height: 150px;
             width: auto;
             transition: var(--transition);
         }
         
         .header.sticky .logo-image {
-            max-height: 50px;
+            max-height: 150px;
         }
         
         .footer-logo-image {
-            max-height: 70px;
+            max-height: 150px;
             width: auto;
             margin-bottom: 20px;
         }
@@ -27,7 +27,7 @@
             height: 70vh;
             min-height: 500px;
             background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75)), 
-                        url('images/projects/projects-hero.jpg');
+                        url('image\ -\ 2026-01-04T072020.069.webp');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;

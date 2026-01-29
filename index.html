@@ -27,6 +27,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
 </head>
+<link rel="stylesheet" href="index.css">
 <body>
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/254769600161?text=Hello%20Hydrodrill%20&%20Pump%20Solutions%20Limited,%20I%20need%20information%20about%20your%20services" 
@@ -38,23 +39,22 @@
     <header class="header">
         <div class="container">
             <nav class="navbar">
-                <a href="index.html" class="logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-water"></i>
-                    </div>
-                    <div class="logo-text">
-                        <span class="logo-main">Hydrodrill</span>
-                        <span class="logo-sub">& Pump Solutions Ltd</span>
-                    </div>
-                </a>
-
-                <div class="nav-menu" id="navMenu">
+               <div class="logo">
+  <a href="index.html" class="logo-link">
+    <img
+      src="HydroDrill Solutions favicon.webp"
+      alt="HydroDrill & Pump Solutions Limited Logo"
+      class="logo-img"
+    />
+  </a>
+</div>
+             <div class="nav-menu" id="navMenu">
                     <ul class="nav-list">
                         <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
                         <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
                         <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
                         <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                         <!--  <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>-->
                         <li class="nav-item"><a href="solar.html" class="nav-link">Solar Solutions</a></li>
                         <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                         <li class="nav-item cta-nav"><a href="tel:+254722233600" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a></li>
@@ -71,117 +71,169 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="swiper hero-swiper">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide hero-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero/drilling-rig-1.jpg');">
-                    <div class="container">
-                        <div class="hero-content">
-                            <h1 class="hero-title">Professional Borehole Drilling & Water Solutions in Kenya</h1>
-                            <p class="hero-subtitle">Reliable groundwater solutions for homes, farms, institutions & industrial applications across Kenya</p>
-                            <div class="hero-buttons">
-                                <a href="contact.html#quote" class="btn btn-primary btn-lg">
-                                    <i class="fas fa-file-alt"></i> Request Free Quote
-                                </a>
-                                <a href="tel:+254722233600" class="btn btn-outline-light btn-lg">
-                                    <i class="fas fa-phone-alt"></i> Call: 0722 233 600
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <section class="hero">
+  <!-- GLOBAL BACKGROUND VIDEO -->
+  <video class="hero-bg-video" autoplay muted loop playsinline>
+    <source
+      src="https://www.shutterstock.com/shutterstock/videos/3425125309/preview/stock-footage-loitokitok-kenya-rig-drilling-well-to-supply-corn-plantation-with-water-kenya.webm"
+      type="video/mp4"
+    />
+  </video>
 
-                <!-- Slide 2 -->
-                <div class="swiper-slide hero-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero/solar-pump-installation.jpg');">
-                    <div class="container">
-                        <div class="hero-content">
-                            <h1 class="hero-title">Solar Water Pumping Solutions for Sustainable Water Access</h1>
-                            <p class="hero-subtitle">Eco-friendly solar water systems for farms, homes and remote locations. Reduce costs with renewable energy</p>
-                            <div class="hero-buttons">
-                                <a href="solar.html" class="btn btn-primary btn-lg">
-                                    <i class="fas fa-solar-panel"></i> Explore Solar Solutions
-                                </a>
-                                <a href="contact.html" class="btn btn-outline-light btn-lg">
-                                    <i class="fas fa-calendar-check"></i> Schedule Consultation
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <div class="hero-overlay"></div>
 
-                <!-- Slide 3 -->
-                <div class="swiper-slide hero-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero/water-pump-installation.jpg');">
-                    <div class="container">
-                        <div class="hero-content">
-                            <h1 class="hero-title">Water Pump Installation & Maintenance Services</h1>
-                            <p class="hero-subtitle">Professional pump installation, servicing and maintenance for optimal water system performance</p>
-                            <div class="hero-buttons">
-                                <a href="products.html" class="btn btn-primary btn-lg">
-                                    <i class="fas fa-tools"></i> View Our Products
-                                </a>
-                                <a href="contact.html" class="btn btn-outline-light btn-lg">
-                                    <i class="fas fa-headset"></i> 24/7 Support
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- SWIPER CONTENT -->
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+
+      <!-- SLIDE 1 -->
+      <div class="swiper-slide">
+        <div class="hero-container">
+          <div class="hero-text">
+            <p class="super-tag">HydroDrill & Pump Solutions Ltd.</p>
+
+            <h1>
+              Welcome <br />
+              To <br />
+              <span>HydroDrill</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Reliable groundwater solutions across Kenya
+            </p>
+
+            <div class="hero-btns">
+              <a href="contact.html#quote" class="btn btn-primary">
+                Request Free Quote
+              </a>
+              <a href="tel:+254722233600" class="btn btn-outline-light">
+                Call 0722 233 600
+              </a>
             </div>
-            
-            <!-- Swiper Navigation -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+          </div>
         </div>
-    </section>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="swiper-slide">
+        <div class="hero-container">
+          <div class="hero-text">
+            <p class="super-tag">Solar Powered Water Systems</p>
+
+            <h1>
+              Solar <br />
+              Water <br />
+              <span>Solutions</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Clean energy pumping for farms & remote locations
+            </p>
+
+            <div class="hero-btns">
+              <a href="solar.html" class="btn btn-primary">
+                Explore Solar
+              </a>
+              <a href="contact.html" class="btn btn-outline-light">
+                Book Consultation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="swiper-slide">
+        <div class="hero-container">
+          <div class="hero-text">
+            <p class="super-tag">Reliable Pump Systems</p>
+
+            <h1>
+              Pump <br />
+              Installation <br />
+              & <span>Maintenance</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Professional installation, servicing & support
+            </p>
+
+            <div class="hero-btns">
+              <a href="products.html" class="btn btn-primary">
+                View Products
+              </a>
+              <a href="contact.html" class="btn btn-outline-light">
+                24/7 Support
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
 
     <!-- Trust Indicators -->
-    <section class="trust-indicators">
-        <div class="container">
-            <div class="indicators-grid">
-                <div class="indicator-card">
-                    <div class="indicator-icon">
-                        <i class="fas fa-calendar-check"></i>
-                    </div>
-                    <div class="indicator-content">
-                        <h3 class="indicator-number" data-count="15">0</h3>
-                        <p class="indicator-text">Years Experience</p>
-                    </div>
-                </div>
+ <section class="trust-indicators" id="trust">
+  <div class="container">
 
-                <div class="indicator-card">
-                    <div class="indicator-icon">
-                        <i class="fas fa-water"></i>
-                    </div>
-                    <div class="indicator-content">
-                        <h3 class="indicator-number" data-count="850">0</h3>
-                        <p class="indicator-text">Boreholes Drilled</p>
-                    </div>
-                </div>
+    <div class="indicators-grid">
 
-                <div class="indicator-card">
-                    <div class="indicator-icon">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <div class="indicator-content">
-                        <h3 class="indicator-number" data-count="42">0</h3>
-                        <p class="indicator-text">Counties Covered</p>
-                    </div>
-                </div>
-
-                <div class="indicator-card">
-                    <div class="indicator-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div class="indicator-content">
-                        <h3 class="indicator-number" data-count="100">0</h3>
-                        <p class="indicator-text">% Satisfaction</p>
-                    </div>
-                </div>
-            </div>
+      <!-- Experience -->
+      <div class="indicator-card">
+        <div class="indicator-icon">
+          <i class="fas fa-calendar-check"></i>
         </div>
-    </section>
+        <div class="indicator-content">
+          <h3 class="indicator-number" data-count="15" data-suffix="+">0</h3>
+<p class="indicator-text">Years Experience</p>
+        </div>
+      </div>
+
+      <!-- Boreholes -->
+      <div class="indicator-card">
+        <div class="indicator-icon">
+          <i class="fas fa-water"></i>
+        </div>
+        <div class="indicator-content">
+          <h3 class="indicator-number" data-count="850" data-suffix="+">0</h3>
+
+          <p class="indicator-text">Boreholes Drilled</p>
+        </div>
+      </div>
+
+      <!-- Coverage -->
+      <div class="indicator-card">
+        <div class="indicator-icon">
+          <i class="fas fa-map-marked-alt"></i>
+        </div>
+        <div class="indicator-content">
+          <h3 class="indicator-number" data-count="42" data-suffix="+">0</h3>
+
+          <p class="indicator-text">Counties Covered</p>
+        </div>
+      </div>
+
+      <!-- Satisfaction -->
+      <div class="indicator-card">
+        <div class="indicator-icon">
+          <i class="fas fa-award"></i>
+        </div>
+        <div class="indicator-content">
+          <h3 class="indicator-number" data-count="100" data-suffix="%">0</h3>
+
+          <p class="indicator-text">Client Satisfaction</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- About Preview Section -->
     <section class="section-padding about-preview">
@@ -194,7 +246,7 @@
             <div class="about-grid">
                 <div class="about-image">
                     <div class="image-wrapper">
-                        <img src="images/about/drilling-team.jpg" alt="Hydrodrill professional drilling team at work" loading="lazy">
+                        <img src="image - 2026-01-04T072020.069 copy.webp" alt="Hydrodrill professional drilling team at work" loading="lazy">
                         <div class="experience-badge">
                             <span class="years">15+</span>
                             <span class="text">Years Experience</span>
@@ -310,7 +362,7 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/projects/farm-irrigation.jpg" alt="Farm irrigation system installation in Machakos" loading="lazy">
+                        <img src="HydroDrill Solutions favicon.webp" alt="Farm irrigation system installation in Machakos" loading="lazy">
                         <div class="project-category">Agricultural</div>
                     </div>
                     <div class="project-content">
@@ -326,7 +378,7 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/projects/school-water.jpg" alt="School water supply project in Kajiado" loading="lazy">
+                        <img src="HydroDrill Solutions favicon.webp" alt="School water supply project in Kajiado" loading="lazy">
                         <div class="project-category">Institutional</div>
                     </div>
                     <div class="project-content">
@@ -342,7 +394,7 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/projects/residential-estate.jpg" alt="Residential estate water system in Makueni" loading="lazy">
+                        <img src="HydroDrill Solutions favicon.webp" alt="Residential estate water system in Makueni" loading="lazy">
                         <div class="project-category">Residential</div>
                     </div>
                     <div class="project-content">
@@ -360,64 +412,78 @@
     </section>
 
     <!-- Why Choose Us -->
-    <section class="section-padding bg-light why-us">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Why Choose Hydrodrill?</h2>
-                <p class="section-subtitle">Excellence, reliability, and customer satisfaction define our work</p>
-            </div>
+  <section class="section-padding bg-light why-us">
+  <div class="container">
 
-            <div class="why-grid">
-                <div class="why-card">
-                    <div class="why-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Expert Team</h3>
-                    <p>Our team comprises experienced hydrogeologists, drilling technicians, and water engineers with extensive field experience.</p>
-                </div>
+    <div class="section-header text-center">
+      <h2 class="section-title">Why Choose Hydrodrill?</h2>
+      <p class="section-subtitle">
+        Excellence, reliability, and customer satisfaction define our work
+      </p>
+    </div>
 
-                <div class="why-card">
-                    <div class="why-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Modern Equipment</h3>
-                    <p>We invest in state-of-the-art drilling rigs, pumping equipment, and testing instruments for optimal results.</p>
-                </div>
+    <!-- Swiper -->
+    <div class="swiper why-swiper">
+      <div class="swiper-wrapper">
 
-                <div class="why-card">
-                    <div class="why-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Quality Assurance</h3>
-                    <p>All projects follow strict quality control procedures and comply with Kenyan water authority standards.</p>
-                </div>
-
-                <div class="why-card">
-                    <div class="why-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Timely Completion</h3>
-                    <p>We respect your time and commit to completing projects within agreed timelines without compromising quality.</p>
-                </div>
-
-                <div class="why-card">
-                    <div class="why-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3>After-Sales Support</h3>
-                    <p>Comprehensive maintenance and support services to ensure your water system operates optimally for years.</p>
-                </div>
-
-                <div class="why-card">
-                    <div class="why-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Transparent Pricing</h3>
-                    <p>Clear, detailed quotations with no hidden costs. We believe in honest, upfront pricing for all our services.</p>
-                </div>
-            </div>
+        <div class="swiper-slide">
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-user-tie"></i></div>
+            <h3>Expert Team</h3>
+            <p>Our team comprises experienced hydrogeologists, drilling technicians, and water engineers with extensive field experience.</p>
+          </div>
         </div>
-    </section>
+
+        <div class="swiper-slide">
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-cogs"></i></div>
+            <h3>Modern Equipment</h3>
+            <p>We invest in state-of-the-art drilling rigs, pumping equipment, and testing instruments for optimal results.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Quality Assurance</h3>
+            <p>All projects follow strict quality control procedures and comply with Kenyan water authority standards.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-clock"></i></div>
+            <h3>Timely Completion</h3>
+            <p>We respect your time and commit to completing projects within agreed timelines without compromising quality.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-headset"></i></div>
+            <h3>After-Sales Support</h3>
+            <p>Comprehensive maintenance and support services to ensure your water system operates optimally for years.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-handshake"></i></div>
+            <h3>Transparent Pricing</h3>
+            <p>Clear, detailed quotations with no hidden costs. We believe in honest, upfront pricing for all our services.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination only (clean, premium) -->
+      <div class="swiper-pagination why-pagination"></div>
+    </div>
+
+  </div>
+</section>
+
+
 
     <!-- CTA Section -->
     <section class="cta-section">
