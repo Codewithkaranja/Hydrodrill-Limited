@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | Hydrodrill & Pump Solutions | Borehole Drilling Portfolio</title>
+    <meta name="description" content="View our portfolio of successful borehole drilling projects across Kenya. Residential, commercial, agricultural, and industrial water solutions completed with excellence.">
+    <meta name="keywords" content="borehole drilling projects Kenya, water solutions portfolio, completed projects, agricultural irrigation, commercial water systems">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="stylesheet" href="projects.css">
+    
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254769600161?text=Hello%20Hydrodrill%20&%20Pump%20Solutions%20Limited,%20I'd%20like%20to%20discuss%20a%20project%20similar%20to%20ones%20in%20your%20portfolio" 
+       class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="HydroDrill Solutions favicon.webp" alt="Hydrodrill & Pump Solutions Limited" class="logo-image">
+                </a>
+
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                        <li class="nav-item"><a href="solar.html" class="nav-link">Solar Solutions</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item cta-nav"><a href="tel:+254722233600" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a></li>
+                    </ul>
+                </div>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Premium Hero Section -->
+    <section class="projects-hero">
+        <div class="hero-overlay-design"></div>
+        <div class="container">
+            <div class="projects-hero-content">
+                <span class="hero-badge">Portfolio Showcase</span>
+                <h1>Engineering Excellence in Water Solutions</h1>
+                <p class="hero-subtitle">Discover our portfolio of successful borehole drilling and water system projects across Kenya, delivering reliable water access to homes, farms, schools, and industries.</p>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">850+</div>
+                        <div class="hero-stat-label">Projects Completed</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">42</div>
+                        <div class="hero-stat-label">Counties Covered</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">98.7%</div>
+                        <div class="hero-stat-label">Success Rate</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">15+</div>
+                        <div class="hero-stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Filter Section -->
+    <section class="projects-filter">
+        <div class="filter-container">
+            <div class="filter-header">
+                <h2>Explore Our Portfolio</h2>
+                <p>Filter projects by category or search for specific projects</p>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="agricultural">Agricultural</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="institutional">Institutional</button>
+                <button class="filter-btn" data-filter="community">Community</button>
+                <button class="filter-btn" data-filter="industrial">Industrial</button>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search projects by location, type, or year...">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Projects Grid -->
+    <section class="premium-projects">
+        <div class="container">
+            <div class="projects-masonry">
+                <!-- Featured Project 1 -->
+                <div class="project-masonry-item featured" data-category="agricultural">
+                    <div class="project-image-container">
+                        <img src="images/projects/featured-farm.jpg" alt="Large-scale farm irrigation system in Machakos" class="project-image">
+                        <div class="project-overlay"></div>
+                        <div class="project-category">Agricultural</div>
+                        <div class="project-featured-tag">
+                            <i class="fas fa-star"></i> Featured Project
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Machakos County
+                            </div>
+                            <div class="project-meta-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                2023
+                            </div>
+                        </div>
+                        <h3 class="project-title">Large-Scale Farm Irrigation System</h3>
+                        <p class="project-description">Complete borehole drilling, solar pump installation, and drip irrigation system for a 250-acre commercial farm. This project provides year-round irrigation for maize, vegetables, and fruit orchards, increasing agricultural productivity by 300%.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">180m Borehole</span>
+                            <span class="tech-tag">Solar Pumping</span>
+                            <span class="tech-tag">Drip Irrigation</span>
+                            <span class="tech-tag">50,000L Storage</span>
+                        </div>
+                        <a href="#" class="project-link view-project" data-project="1">
+                            View Full Case Study <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-masonry-item" data-category="residential">
+                    <div class="project-image-container">
+                        <img src="images/projects/residential-estate.jpg" alt="Gated community water system in Nairobi" class="project-image">
+                        <div class="project-overlay"></div>
+                        <div class="project-category">Residential</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Nairobi County
+                            </div>
+                            <div class="project-meta-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                2023
+                            </div>
+                        </div>
+                        <h3 class="project-title">Gated Community Water Supply</h3>
+                        <p class="project-description">Complete water system for a 50-unit gated community including borehole drilling, overhead storage tanks, and distribution network with smart metering for each residence.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">200m Depth</span>
+                            <span class="tech-tag">Smart Metering</span>
+                            <span class="tech-tag">100,000L Storage</span>
+                        </div>
+                        <a href="#" class="project-link view-project" data-project="2">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-masonry-item" data-category="institutional">
+                    <div class="project-image-container">
+                        <img src="images/projects/school-project.jpg" alt="Boarding school water system in Kajiado" class="project-image">
+                        <div class="project-overlay"></div>
+                        <div class="project-category">Institutional</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Kajiado County
+                            </div>
+                            <div class="project-meta-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                2023
+                            </div>
+                        </div>
+                        <h3 class="project-title">Boarding School Water System</h3>
+                        <p class="project-description">Borehole rehabilitation and new pump installation for a boarding school serving 800+ students. Project included water treatment system and backup power supply.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Borehole Rehab</span>
+                            <span class="tech-tag">Water Treatment</span>
+                            <span class="tech-tag">Backup Generator</span>
+                        </div>
+                        <a href="#" class="project-link view-project" data-project="3">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-masonry-item" data-category="commercial">
+                    <div class="project-image-container">
+                        <img src="images/projects/hotel-project.jpg" alt="Hotel water system in Mombasa" class="project-image">
+                        <div class="project-overlay"></div>
+                        <div class="project-category">Commercial</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Mombasa County
+                            </div>
+                            <div class="project-meta-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                2022
+                            </div>
+                        </div>
+                        <h3 class="project-title">Luxury Hotel Water System</h3>
+                        <p class="project-description">Complete water solution for a 5-star hotel including borehole drilling, dual pump system, water treatment, and swimming pool supply system.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">250m Depth</span>
+                            <span class="tech-tag">Dual Pumps</span>
+                            <span class="tech-tag">RO Treatment</span>
+                        </div>
+                        <a href="#" class="project-link view-project" data-project="4">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-masonry-item" data-category="agricultural">
+                    <div class="project-image-container">
+                        <img src="images/projects/orchard-project.jpg" alt="Orchard irrigation system in Murang'a" class="project-image">
+                        <div class="project-overlay"></div>
+                        <div class="project-category">Agricultural</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Murang'a County
+                            </div>
+                            <div class="project-meta-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                2022
+                            </div>
+                        </div>
+                        <h3 class="project-title">Fruit Orchard Irrigation</h3>
+                        <p class="project-description">Solar-powered irrigation system for a 30-acre avocado and mango orchard. Includes drip irrigation and fertigation system for optimal tree growth.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Solar Powered</span>
+                            <span class="tech-tag">Drip Irrigation</span>
+                            <span class="tech-tag">Fertigation</span>
+                        </div>
+                        <a href="#" class="project-link view-project" data-project="5">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-masonry-item" data-category="community">
+                    <div class="project-image-container">
+                        <img src="images/projects/community-project.jpg" alt="Community water project in Makueni" class="project-image">
+                        <div class="project-overlay"></div>
+                        <div class="project-category">Community</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Makueni County
+                            </div>
+                            <div class="project-meta-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                2022
+                            </div>
+                        </div>
+                        <h3 class="project-title">Community Water Project</h3>
+                        <p class="project-description">Borehole drilling and water kiosk installation serving 500+ households in a rural community. Includes storage tanks and multiple water points.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Community Project</span>
+                            <span class="tech-tag">Water Kiosk</span>
+                            <span class="tech-tag">Multiple Points</span>
+                        </div>
+                        <a href="#" class="project-link view-project" data-project="6">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 7 -->
+                <div class="project-masonry-item" data-category="industrial">
+                    <div class="project-image-container">
+                        <img src="images/projects/factory-project.jpg" alt="Factory water supply in Thika" class="project-image">
+                        <div class="project-overlay"></div>
+                        <div class="project-category">Industrial</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Kiambu County
+                            </div>
+                            <div class="project-meta-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                2021
+                            </div>
+                        </div>
+                        <h3 class="project-title">Factory Water Supply System</h3>
+                        <p class="project-description">Industrial water system for a manufacturing plant including borehole drilling, high-capacity pumps, and specialized water treatment for production processes.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">High Capacity</span>
+                            <span class="tech-tag">Industrial Grade</span>
+                            <span class="tech-tag">Process Water</span>
+                        </div>
+                        <a href="#" class="project-link view-project" data-project="7">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 8 -->
+                <div class="project-masonry-item" data-category="residential">
+                    <div class="project-image-container">
+                        <img src="images/projects/apartment-project.jpg" alt="Apartment complex water system in Nakuru" class="project-image">
+                        <div class="project-overlay"></div>
+                        <div class="project-category">Residential</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Nakuru County
+                            </div>
+                            <div class="project-meta-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                2021
+                            </div>
+                        </div>
+                        <h3 class="project-title">Apartment Complex Water System</h3>
+                        <p class="project-description">Complete water supply solution for a 100-unit apartment complex including borehole drilling, pumping system, and rooftop water storage.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Multi-story</span>
+                            <span class="tech-tag">Pressure Boosting</span>
+                            <span class="tech-tag">Rooftop Storage</span>
+                        </div>
+                        <a href="#" class="project-link view-project" data-project="8">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <button class="btn btn-primary btn-lg" id="loadMoreProjects">
+                    <i class="fas fa-spinner"></i> Load More Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery Modal -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="modal-nav modal-prev" id="modalPrev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="modal-nav modal-next" id="modalNext">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <img src="" alt="" class="modal-image" id="modalImage">
+        </div>
+    </div>
+
+    <!-- Project Testimonials -->
+    <section class="project-testimonials">
+        <div class="container">
+            <div class="section-header section-header-light text-center">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-subtitle">What our clients say about our completed projects</p>
+            </div>
+            
+            <div class="testimonial-slider swiper">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                "Hydrodrill delivered exactly what they promised. Our farm irrigation system has transformed our agricultural productivity. The solar pumping system has reduced our energy costs by 80% and the water supply is consistently reliable throughout the year."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="images/testimonials/farmer.jpg" alt="James Mwangi" loading="lazy">
+                                </div>
+                                <div class="author-info">
+                                    <h4>James Mwangi</h4>
+                                    <p>Farm Owner, Machakos County</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                "As a school principal, ensuring consistent water supply for 800+ students was a major challenge. Hydrodrill not only drilled a successful borehole but also installed a complete water treatment system. Their professionalism and after-sales support have been outstanding."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="images/testimonials/principal.jpg" alt="Sarah Wanjiru" loading="lazy">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sarah Wanjiru</h4>
+                                    <p>School Principal, Kajiado County</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                "The commercial water system installed at our hotel has been operating flawlessly for two years. The dual pump system ensures uninterrupted water supply, and the water treatment system provides crystal clear water for our guests. Highly recommended for any commercial establishment."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="images/testimonials/hotel-manager.jpg" alt="David Omondi" loading="lazy">
+                                </div>
+                                <div class="author-info">
+                                    <h4>David Omondi</h4>
+                                    <p>Hotel Manager, Mombasa County</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Statistics -->
+    <section class="impact-stats">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Our Project Impact</h2>
+                <p class="section-subtitle">Transforming communities through reliable water access</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number">250,000+</div>
+                    <div class="stat-label">People Served</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="stat-number">15M+</div>
+                    <div class="stat-label">Liters Daily Capacity</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="stat-number">180+</div>
+                    <div class="stat-label">Solar Projects</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <div class="stat-number">120+</div>
+                    <div class="stat-label">Boreholes Rehabilitated</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="project-cta">
+        <div class="container">
+            <h2>Ready to Start Your Water Project?</h2>
+            <p>Let us help you achieve reliable water access with the same expertise and quality showcased in our portfolio.</p>
+            
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-gold btn-lg">
+                    <i class="fas fa-calendar-star"></i> Schedule Project Consultation
+                </a>
+                <a href="tel:+254722233600" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-phone-alt"></i> Call: 0722 233 600
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <img src="HydroDrill Solutions favicon.webp" alt="Hydrodrill & Pump Solutions Limited" class="footer-logo-image">
+                    <p>Professional borehole drilling, water pump installation, and solar water systems across Kenya. Your trusted partner for reliable water solutions since 2009.</p>
+                    <div class="footer-social">
+                        <a href="https://web.facebook.com/p/Hydrodrill-and-Pump-Solutions-Ltd-61575935065466" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/254769600161" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="solar.html">Solar Solutions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Project Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-filter="agricultural">Agricultural Projects</a></li>
+                        <li><a href="#" data-filter="residential">Residential Projects</a></li>
+                        <li><a href="#" data-filter="commercial">Commercial Projects</a></li>
+                        <li><a href="#" data-filter="institutional">Institutional Projects</a></li>
+                        <li><a href="#" data-filter="community">Community Projects</a></li>
+                        <li><a href="#" data-filter="industrial">Industrial Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Machakos, Kenya</span>
+                                <a href="https://maps.app.goo.gl/ucqaERyNgMWg8kRX7" target="_blank" class="map-link">View on Google Maps</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <a href="tel:+254722233600">0722 233 600</a>
+                                <a href="tel:+254769600161">0769 600 161</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <a href="mailto:info@hydrodrillsolutions.com">info@hydrodrillsolutions.com</a>
+                                <a href="mailto:sales@hydrodrillsolutions.com">sales@hydrodrillsolutions.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <span>Mon - Fri: 8:00 AM - 6:00 PM</span>
+                                <span>Sat: 9:00 AM - 4:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Hydrodrill & Pump Solutions Limited. All rights reserved.</p>
+                <div class="payment-methods">
+                    <span>We accept:</span>
+                    <i class="fab fa-cc-mpesa" title="MPESA"></i>
+                    <i class="fab fa-cc-visa" title="Visa"></i>
+                    <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fab fa-cc-paypal" title="PayPal"></i>
+                </div>
+            </div>
+            
+            <div class="developer-credit">
+                <p>Website designed and developed by <a href="https://sarahadevelopers.co.ke" target="_blank">Saraha Developers</a> | <span id="currentDate"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+    <script src="projects.js"></script>
+</body>
+</html>
