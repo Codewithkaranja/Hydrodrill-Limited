@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block system / private pages if any
+Disallow: /admin/
+Disallow: /cgi-bin/
+
+# Sitemap
+Sitemap: https://hydrodrillsolutions.com/sitemap.xml
