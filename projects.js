@@ -129,14 +129,14 @@
         
         // Sample project images (in a real scenario, these would come from a database)
         const projectImages = {
-            1: ['images/projects/featured-farm.jpg', 'images/projects/farm-detail-1.jpg', 'images/projects/farm-detail-2.jpg'],
-            2: ['images/projects/residential-estate.jpg'],
-            3: ['images/projects/school-project.jpg'],
-            4: ['images/projects/hotel-project.jpg'],
-            5: ['images/projects/orchard-project.jpg'],
-            6: ['images/projects/community-project.jpg'],
-            7: ['images/projects/factory-project.jpg'],
-            8: ['images/projects/apartment-project.jpg']
+            1: ['image - 2026-02-02T142031.882.webp', 'image - 2026-02-02T142402.363.webp', 'image - 2026-02-02T142311.874.webp'],
+            2: ['image - 2026-02-02T142335.989.webp'],
+            3: ['image - 2026-02-02T142222.308.webp'],
+            4: ['image - 2026-02-02T142117.193.webp'],
+            5: ['image - 2026-02-02T142402.363.webp'],
+            6: ['image - 2026-02-02T143101.494.webp'],
+            7: ['image - 2026-02-02T142427.295.webp'],
+            8: ['image - 2026-02-02T143034.461.webp']
         };
         
         let currentProjectId = null;
@@ -251,6 +251,28 @@
         if (statsSection) {
             statsObserver.observe(statsSection);
         }
+        // Initialize Gallery Swiper
+        const gallerySwiper = new Swiper('.gallery-slider', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
         
         // Filter links in footer
         document.querySelectorAll('a[data-filter]').forEach(link => {

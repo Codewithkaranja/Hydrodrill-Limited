@@ -29,7 +29,7 @@
             height: 80vh;
             min-height: 600px;
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                        url('images/solar/solar-hero.jpg');
+                        url('image\ -\ 2026-01-04T072020.069.webp');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -798,3 +798,104 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        /* ===== Solar Gallery – Full Image Premium Cards ===== */
+
+.solar-gallery {
+  padding: 90px 0;
+}
+
+.gallery-slider {
+  margin-top: 40px;
+}
+
+/* Hide all text content completely */
+.gallery-content {
+  display: none !important;
+}
+
+/* Swiper slide reset */
+.gallery-slider .swiper-slide {
+  height: auto;
+}
+
+/* Card = image only */
+.gallery-slide {
+  position: relative;
+  width: 100%;
+  height: 360px; /* desktop height */
+  border-radius: 22px;
+  overflow: hidden;
+
+  background: #000;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.25);
+  transform: translateZ(0);
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+/* Image container fills card */
+.gallery-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* Image fills everything */
+.gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  transform: scale(1.05);
+  transition: transform 0.9s ease;
+}
+
+/* Premium hover effect */
+.gallery-slide:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-slide:hover img {
+  transform: scale(1.15);
+}
+
+/* Luxury gradient overlay */
+.gallery-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.15) 40%,
+      rgba(0, 0, 0, 0.05)
+    );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-slide:hover::after {
+  opacity: 1;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .gallery-slide {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-slide {
+    height: 260px;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gallery-slide {
+    height: 220px;
+    border-radius: 16px;
+  }
+}

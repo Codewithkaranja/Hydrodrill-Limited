@@ -33,15 +33,7 @@
             color: white;
         }
         
-        .hero-background-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -2;
-        }
+       
         
         .hero-overlay {
             position: absolute;
@@ -120,18 +112,7 @@
   padding: clamp(70px, 6vh, 110px) 0 clamp(40px, 4vh, 80px);
 }
 
-/* Background Video */
-.hero-background-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  opacity: 0.42;
-  transform: scale(1.03);
-  filter: saturate(1.05) contrast(1.05);
-}
+
 
 /* Premium overlay (keeps your theme vibe) */
 .luxury-hero .hero-overlay {
@@ -247,8 +228,8 @@
   /* 🔁 Replace with your actual image path */
   background-image:
     linear-gradient(
-      rgba(0, 0, 0, 0.925),
-      rgb(0, 0, 0)
+      rgba(0, 0, 0, 0.475),
+      rgba(0, 0, 0, 0.404)
     ),
     url("image\ -\ 2026-01-04T072020.069.webp");
 
@@ -338,7 +319,12 @@
         /* Premium Services Grid */
         .premium-services {
             padding: 100px 0;
-            background: var(--gradient-light);
+            background:
+    linear-gradient(rgba(30, 29, 29, 0.95), rgba(236, 233, 233, 0.95)),
+    url("HydroDrill Solutions favicon.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
         }
         
         .service-category {
@@ -360,6 +346,7 @@
             position: relative;
             display: inline-block;
             padding-bottom: 15px;
+            color: goldenrod;
         }
         
         .category-header h2::after {
@@ -380,7 +367,7 @@
         }
         
         .premium-service-card {
-            background: white;
+            background: black;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
@@ -467,11 +454,11 @@
         .service-content h3 {
             font-size: 1.8rem;
             margin-bottom: 15px;
-            color: var(--dark-color);
+            color: goldenrod;
         }
         
         .service-description {
-            color: #666;
+            color: aliceblue;
             margin-bottom: 25px;
             line-height: 1.7;
         }
@@ -485,7 +472,7 @@
             margin-bottom: 10px;
             display: flex;
             align-items: center;
-            color: #555;
+            color: aliceblue;
         }
         
         .service-features li i {
@@ -538,7 +525,7 @@
         }
         
         .section-header-light .section-subtitle {
-            color: rgba(255, 255, 255, 0.8);
+            color: white;
         }
         
         .timeline-container {
@@ -927,7 +914,7 @@
             .nav-toggle span {
                 width: 25px;
                 height: 3px;
-                background-color: white;
+                background-color: black;
                 transition: var(--transition);
                 transform-origin: left center;
             }
@@ -1158,3 +1145,70 @@
     transform: scale(1.06);
   }
 }
+@media (max-width: 768px) {
+  #mainNav { display: none; }
+  #mainNav.active { display: block; }
+
+  /* or if you're using a slide-in menu, keep your slide CSS but still toggle .active */
+}
+.premium-service-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  .premium-service-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .premium-service-card {
+    border-radius: 16px;
+  }
+
+  .service-image {
+    height: 220px;
+  }
+
+  .service-content {
+    padding: 22px;
+  }
+}
+html, body {
+  overflow-x: hidden;
+}
+
+.premium-service-card,
+.service-content,
+.service-image img {
+  max-width: 100%;
+}
+.premium-services,
+.service-category {
+  overflow: visible;
+}
+.luxury-hero{
+  position: relative;
+  background:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("image - 2026-01-04T072020.069.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* overlay should be ONLY overlay effects (no image) */
+.luxury-hero .hero-overlay{
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(circle at 20% 25%, rgba(0, 107, 214, 0.18), transparent 55%),
+    radial-gradient(circle at 80% 10%, rgba(251, 191, 36, 0.20), transparent 52%);
+}
+
+.hero-background-video{
+  display: none; /* only if you’re not using video */
+}
+
+.luxury-hero .container{ position: relative; z-index: 2; }

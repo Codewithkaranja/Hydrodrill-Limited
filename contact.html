@@ -50,7 +50,7 @@
                          <!--  <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>-->
                         <li class="nav-item"><a href="solar.html" class="nav-link">Solar Solutions</a></li>
                         <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
-                        <li class="nav-item cta-nav"><a href="tel:+254722233600" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a></li>
+                        <li class="nav-item cta-nav"><a href="tel:+254769600161" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a></li>
                     </ul>
                 </div>
 
@@ -107,8 +107,8 @@
                         </div>
                         <div class="contact-details">
                             <h4>Phone Numbers</h4>
-                            <p><a href="tel:+254722233600">0722 233 600</a> (Primary)</p>
-                            <p><a href="tel:+254769600161">0769 600 161</a> (Alternative)</p>
+                            <p><a href="tel:+254769600161">0769 600 161</a> (Primary)</p>
+                            <p><a href="tel:+254722233600">0722 233 600</a> (Alternative)</p>
                             <p><strong>Emergency:</strong> 24/7 Support Available</p>
                         </div>
                     </div>
@@ -153,60 +153,135 @@
                     <h3 id="contact-form">Send Us a Message</h3>
                     <p class="mb-4">Fill out the form below and our team will get back to you promptly with a customized solution.</p>
                     
-                    <form id="contactForm" action="https://formspree.io/f/mqkrjlkv" method="POST">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Full Name *</label>
-                            <input type="text" id="name" name="name" class="form-control" required placeholder="Enter your full name">
-                        </div>
+                   <form
+  id="contactForm"
+  action="https://formsubmit.co/hydrodrillsolutions@gmail.com"
+  method="POST"
+>
+  <!-- Disable captcha -->
+  <input type="hidden" name="_captcha" value="false">
 
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email Address *</label>
-                            <input type="email" id="email" name="email" class="form-control" required placeholder="Enter your email address">
-                        </div>
+  <!-- Email subject -->
+  <input
+    type="hidden"
+    name="_subject"
+    value="New Contact Form Message - HydroDrill Solutions"
+  >
 
-                        <div class="form-group">
-                            <label for="phone" class="form-label">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" class="form-control" required placeholder="Enter your phone number">
-                        </div>
+  <!-- Redirect after submit (optional) -->
+  <input
+    type="hidden"
+    name="_next"
+    value="https://hydrodrillsolutions.co.ke/thank-you.html"
+  >
 
-                        <div class="form-group">
-                            <label for="service" class="form-label">Service Required *</label>
-                            <select id="service" name="service" class="form-control" required>
-                                <option value="" disabled selected>Select a service</option>
-                                <option value="borehole-drilling">Borehole Drilling</option>
-                                <option value="hydrogeological-survey">Hydrogeological Survey</option>
-                                <option value="pump-installation">Pump Installation</option>
-                                <option value="solar-water-system">Solar Water System</option>
-                                <option value="borehole-rehabilitation">Borehole Rehabilitation</option>
-                                <option value="maintenance">Maintenance & Repair</option>
-                                <option value="consultation">General Consultation</option>
-                                <option value="other">Other Services</option>
-                            </select>
-                        </div>
+  <!-- Honeypot spam protection -->
+  <input type="text" name="_honey" style="display:none">
 
-                        <div class="form-group">
-                            <label for="location" class="form-label">Project Location</label>
-                            <input type="text" id="location" name="location" class="form-control" placeholder="County, Town, or Area">
-                        </div>
+  <div class="form-group">
+    <label for="name" class="form-label">Full Name *</label>
+    <input
+      type="text"
+      id="name"
+      name="Full Name"
+      class="form-control"
+      required
+      placeholder="Enter your full name"
+    >
+  </div>
 
-                        <div class="form-group">
-                            <label for="message" class="form-label">Message *</label>
-                            <textarea id="message" name="message" class="form-control" required placeholder="Tell us about your water needs, project details, or any specific requirements..."></textarea>
-                        </div>
+  <div class="form-group">
+    <label for="email" class="form-label">Email Address *</label>
+    <input
+      type="email"
+      id="email"
+      name="Email"
+      class="form-control"
+      required
+      placeholder="Enter your email address"
+    >
+  </div>
 
-                        <div class="form-group">
-                            <div class="form-check">
-                                <input type="checkbox" id="newsletter" name="newsletter" class="form-check-input">
-                                <label for="newsletter" class="form-check-label">Subscribe to our newsletter for updates on water solutions</label>
-                            </div>
-                        </div>
+  <div class="form-group">
+    <label for="phone" class="form-label">Phone Number *</label>
+    <input
+      type="tel"
+      id="phone"
+      name="Phone Number"
+      class="form-control"
+      required
+      placeholder="Enter your phone number"
+    >
+  </div>
 
-                        <button type="submit" class="btn btn-primary btn-lg w-100">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                        
-                        <p class="text-center mt-3 small">By submitting this form, you agree to our <a href="privacy.html">Privacy Policy</a>. We'll never share your information with third parties.</p>
-                    </form>
+  <div class="form-group">
+    <label for="service" class="form-label">Service Required *</label>
+    <select
+      id="service"
+      name="Service Required"
+      class="form-control"
+      required
+    >
+      <option value="" disabled selected>Select a service</option>
+      <option value="Borehole Drilling">Borehole Drilling</option>
+      <option value="Hydrogeological Survey">Hydrogeological Survey</option>
+      <option value="Pump Installation">Pump Installation</option>
+      <option value="Solar Water System">Solar Water System</option>
+      <option value="Borehole Rehabilitation">Borehole Rehabilitation</option>
+      <option value="Maintenance & Repair">Maintenance & Repair</option>
+      <option value="General Consultation">General Consultation</option>
+      <option value="Other Services">Other Services</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="location" class="form-label">Project Location</label>
+    <input
+      type="text"
+      id="location"
+      name="Project Location"
+      class="form-control"
+      placeholder="County, Town, or Area"
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="message" class="form-label">Message *</label>
+    <textarea
+      id="message"
+      name="Message"
+      class="form-control"
+      required
+      placeholder="Tell us about your water needs, project details, or any specific requirements..."
+    ></textarea>
+  </div>
+
+  <div class="form-group">
+    <div class="form-check">
+      <input
+        type="checkbox"
+        id="newsletter"
+        name="Newsletter Subscription"
+        value="Yes"
+        class="form-check-input"
+      >
+      <label for="newsletter" class="form-check-label">
+        Subscribe to our newsletter for updates on water solutions
+      </label>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-lg w-100">
+    <i class="fas fa-paper-plane"></i> Send Message
+  </button>
+
+  <p class="text-center mt-3 small">
+    By submitting this form, you agree to our
+    <a href="privacy.html">Privacy Policy</a>.
+    We'll never share your information with third parties.
+  </p>
+</form>
+
                 </div>
             </div>
 
@@ -241,7 +316,7 @@
                         </div>
                         <h4>SMS/Text</h4>
                         <p>Send us an SMS for non-urgent inquiries</p>
-                        <a href="sms:+254722233600" class="btn btn-outline mt-2">
+                        <a href="sms:+254769600161" class="btn btn-outline mt-2">
                             <i class="fas fa-sms"></i> Send SMS
                         </a>
                     </div>
@@ -278,7 +353,7 @@
         </button>
         <div class="faq-answer" hidden>
           <p>
-            We respond to all inquiries within 1–2 hours during business hours (8 AM – 6 PM, Monday to Saturday).
+            We respond to all inquiries within 1–2 hours during business hours (8 AM – 5:30 PM, Monday to Friday and 8:30 AM - 1:00PM on Saturday).
             For urgent matters, please call our emergency line.
           </p>
         </div>
@@ -337,8 +412,8 @@
                 <h2>Ready to Solve Your Water Challenges?</h2>
                 <p>Contact us today for professional advice, free quotes, and customized water solutions tailored to your needs.</p>
                 <div class="cta-buttons">
-                    <a href="tel:+254722233600" class="btn btn-light btn-lg">
-                        <i class="fas fa-phone-alt"></i> Call Now: 0722 233 600
+                    <a href="tel:+254769600161" class="btn btn-light btn-lg">
+                        <i class="fas fa-phone-alt"></i> Call Now: 0769 600 161
                     </a>
                     <a href="#contact-form" class="btn btn-outline-light btn-lg">
                         <i class="fas fa-envelope"></i> Send Message
@@ -354,7 +429,7 @@
             <div class="footer-grid">
                 <div class="footer-col footer-about">
                     <img src="HydroDrill Solutions favicon.webp" alt="Hydrodrill & Pump Solutions Limited" class="footer-logo-image">
-                    <p>Professional borehole drilling, water pump installation, and solar water systems across Kenya. Your trusted partner for reliable water solutions since 2009.</p>
+                    <p>Professional borehole drilling, water pump installation, and solar water systems across Kenya. Your trusted partner for reliable water solutions since 2018.</p>
                     <div class="footer-social">
                         <a href="https://web.facebook.com/p/Hydrodrill-and-Pump-Solutions-Ltd-61575935065466" target="_blank" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
@@ -413,9 +488,9 @@
                         <div class="contact-item">
                             <i class="fas fa-phone-alt"></i>
                             <div>
-                                <a href="tel:+254722233600">0722 233 600</a>
                                 <a href="tel:+254769600161">0769 600 161</a>
-                            </div>
+                                <a href="tel:+254722233600">0722 233 600</a>
+                                 </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
@@ -427,8 +502,8 @@
                         <div class="contact-item">
                             <i class="fas fa-clock"></i>
                             <div>
-                                <span>Mon - Fri: 8:00 AM - 6:00 PM</span>
-                                <span>Sat: 9:00 AM - 4:00 PM</span>
+                                <span>Mon - Fri: 8:00 AM - 5:30 PM</span>
+                                <span>Sat: 8:30 AM - 1:00 PM</span>
                             </div>
                         </div>
                     </div>
