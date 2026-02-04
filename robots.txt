@@ -1,9 +1,16 @@
 User-agent: *
 Allow: /
 
-# Block system / private pages if any
 Disallow: /admin/
 Disallow: /cgi-bin/
 
-# Sitemap
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
 Sitemap: https://hydrodrillsolutions.com/sitemap.xml
