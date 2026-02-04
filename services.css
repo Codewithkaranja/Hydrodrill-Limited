@@ -321,7 +321,7 @@
             padding: 100px 0;
             background:
     linear-gradient(rgba(30, 29, 29, 0.95), rgba(236, 233, 233, 0.95)),
-    url("HydroDrill Solutions favicon.webp");
+    url("HydroDrill-Solutions-favicon.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -525,7 +525,7 @@
         }
         
         .section-header-light .section-subtitle {
-            color: white;
+            color: rgba(255, 255, 255, 0.8);
         }
         
         .timeline-container {

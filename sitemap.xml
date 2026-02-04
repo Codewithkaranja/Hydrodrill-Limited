@@ -4,57 +4,36 @@
   <url>
     <loc>https://hydrodrillsolutions.com/</loc>
     <lastmod>2026-02-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://hydrodrillsolutions.com/about.html</loc>
     <lastmod>2026-02-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://hydrodrillsolutions.com/services.html</loc>
     <lastmod>2026-02-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://hydrodrillsolutions.com/projects.html</loc>
     <lastmod>2026-02-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://hydrodrillsolutions.com/solar.html</loc>
     <lastmod>2026-02-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://hydrodrillsolutions.com/contact.html</loc>
     <lastmod>2026-02-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://hydrodrillsolutions.com/privacy.html</loc>
     <lastmod>2026-02-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://hydrodrillsolutions.com/thank-you.html</loc>
-    <lastmod>2026-02-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
   </url>
 
 </urlset>

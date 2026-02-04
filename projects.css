@@ -209,237 +209,266 @@
         }
         
         /* Premium Projects Grid */
-        .premium-projects {
-            padding: 80px 0;
-            background:
-    linear-gradient(rgba(21, 17, 17, 0.95), rgba(35, 32, 32, 0.95)),
-    url("HydroDrill Solutions favicon.webp");
+      /* ===============================
+   PREMIUM PROJECTS (WIDER + LUXURY)
+   =============================== */
+
+.premium-projects{
+  padding: 90px 0;
+  background:
+    linear-gradient(rgba(21, 17, 17, 0.92), rgba(35, 32, 32, 0.92)),
+    url("HydroDrill-Solutions-favicon.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-        }
-        
-        .projects-masonry {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 40px;
-            margin-top: 50px;
-        }
-        
-        .project-masonry-item {
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            position: relative;
-            background: white;
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .project-masonry-item:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
-        }
-        
-        .project-masonry-item.featured {
-            grid-column: span 2;
-            height: 600px;
-        }
-        
-        .project-image-container {
-            height: 300px;
-            
-            position: relative;
-        }
-        
-        .project-masonry-item.featured .project-image-container {
-            height: 400px;
-        }
-        
-        .project-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-        
-        .project-masonry-item:hover .project-image {
-            transform: scale(1.1);
-        }
-        
-        .project-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
-            opacity: 0;
-            transition: opacity 0.4s ease;
-            display: flex;
-            align-items: flex-end;
-            padding: 30px;
-        }
-        
-        .project-masonry-item:hover .project-overlay {
-            opacity: 1;
-        }
-        
-        .project-category {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: var(--gradient-secondary);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            z-index: 2;
-        }
-        
-        .project-featured-tag {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            background: var(--gradient-primary);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            z-index: 2;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .project-content {
-            padding: 30px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .project-meta {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px;
-            color: var(--gray-color);
-            font-size: 0.9rem;
-        }
-        
-        .project-meta-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .project-title {
-            font-size: 1.6rem;
-            margin-bottom: 15px;
-            color: var(--dark-color);
-        }
-        
-        .project-description {
-            color: #666;
-            margin-bottom: 25px;
-            line-height: 1.6;
-            flex-grow: 1;
-        }
-        
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 25px;
-        }
-        
-        .tech-tag {
-            background: rgba(0, 107, 214, 0.1);
-            color: var(--primary-color);
-            padding: 5px 15px;
-            border-radius: 15px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-        
-        .project-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            color: var(--primary-color);
-            font-weight: 500;
-            padding: 12px 25px;
-            border: 2px solid var(--primary-color);
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            text-align: center;
-            justify-content: center;
-        }
-        
-        .project-link:hover {
-            background: var(--gradient-primary);
-            color: white;
-            transform: translateX(10px);
-        }
-        /* 1) Let cards grow with content */
+}
+
+/* Wider cards */
+.projects-masonry{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); /* ✅ wider */
+  gap: 44px;
+  margin-top: 60px;
+  align-items: stretch;
+}
+
+/* Premium card */
 .project-masonry-item{
-  height: auto;              /* ✅ remove fixed 500px */
-  min-height: 500px;         /* optional: keeps premium size */
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f8fb 100%);
+  height: auto;
+  min-height: 520px;
+
+  /* premium depth */
+  box-shadow:
+    0 22px 50px rgba(0, 0, 0, 0.18),
+    0 1px 0 rgba(255, 255, 255, 0.65) inset;
+
+  /* clean luxury transition (no bounce) */
+  transition: transform .35s ease, box-shadow .35s ease, filter .35s ease;
 }
 
-/* featured too */
+/* subtle premium border + glow ring */
+.project-masonry-item::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.12);
+  pointer-events:none;
+}
+
+/* top highlight */
+.project-masonry-item::after{
+  content:"";
+  position:absolute;
+  left:-25%;
+  top:-55%;
+  width: 150%;
+  height: 70%;
+  background: radial-gradient(circle at 50% 50%,
+    rgba(255,255,255,0.18),
+    rgba(255,255,255,0) 60%);
+  transform: rotate(8deg);
+  opacity: .55;
+  pointer-events:none;
+}
+
+.project-masonry-item:hover{
+  transform: translateY(-10px);
+  box-shadow:
+    0 34px 80px rgba(0, 0, 0, 0.28),
+    0 1px 0 rgba(255, 255, 255, 0.65) inset;
+  filter: saturate(1.02);
+}
+
+/* featured layout */
 .project-masonry-item.featured{
-  height: auto;              /* ✅ remove fixed 600px */
-  min-height: 600px;         /* optional */
+  grid-column: span 2;
+  min-height: 620px;
 }
 
-/* 2) Make image container flexible */
+/* Image container (premium backdrop) */
 .project-image-container{
-  height: auto;              /* ✅ no fixed crop area */
-  aspect-ratio: 16 / 10;     /* ✅ consistent look */
-  background: #0b1220;       /* premium dark backdrop for contain */
+  position: relative;
+  background: linear-gradient(180deg, #0b1220 0%, #070b14 100%);
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
 }
 
-/* featured aspect ratio */
 .project-masonry-item.featured .project-image-container{
   aspect-ratio: 16 / 9;
 }
 
-/* 3) Show the full image */
+/* Show full image without crop */
 .project-image{
-  object-fit: contain;       /* ✅ shows whole image */
-  background: #0b1220;       /* blends with container */
-  transform: none;           /* prevent weird zoom cropping */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: transparent;
+  transform: scale(1);
+  transition: transform .45s ease, opacity .45s ease;
 }
 
-/* Optional: keep a subtle premium hover without cropping */
 .project-masonry-item:hover .project-image{
-  transform: scale(1.03);    /* tiny scale is safe with contain */
+  transform: scale(1.03);
+  opacity: .98;
 }
 
-/* 4) Overlay should not hide the image/content */
+/* Overlay (classy, not too dark) */
 .project-overlay{
-  pointer-events: none;      /* overlay won’t block clicks */
+  position:absolute;
+  inset:0;
+  background: linear-gradient(to bottom,
+    rgba(0,0,0,0) 45%,
+    rgba(0,0,0,0.55) 100%);
+  opacity: 0;
+  transition: opacity .35s ease;
+  pointer-events:none;
 }
+
+.project-masonry-item:hover .project-overlay{
+  opacity: 1;
+}
+
+/* Category tags (glass + premium) */
+.project-category,
+.project-featured-tag{
+  position:absolute;
+  top: 18px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .3px;
+  z-index: 2;
+
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+}
+
+.project-category{ right: 18px; }
+.project-featured-tag{ left: 18px; display:flex; gap:8px; align-items:center; }
+
+/* Content (more luxury spacing + typography) */
+.project-content{
+  padding: 32px 30px 34px;
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-meta{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-size: .9rem;
+  color: rgba(15,23,42,0.65);
+}
+
+.project-title{
+  font-size: 1.55rem;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.project-description{
+  color: rgba(15,23,42,0.72);
+  line-height: 1.7;
+  margin-bottom: 22px;
+  flex-grow: 1;
+}
+
+/* Tech tags (pill + subtle gradient) */
+.project-tech{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.tech-tag{
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: .82rem;
+  font-weight: 600;
+
+  background: rgba(0, 107, 214, 0.10);
+  border: 1px solid rgba(0, 107, 214, 0.18);
+  color: var(--primary-color);
+}
+
+/* CTA button (premium) */
+.project-link{
+  display: inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+
+  border: 1px solid rgba(0,107,214,0.35);
+  color: var(--primary-color);
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: transform .25s ease, background .25s ease, color .25s ease, border-color .25s ease;
+}
+
+.project-link:hover{
+  background: var(--gradient-primary);
+  color: #fff;
+  border-color: transparent;
+  transform: translateY(-2px);
+}
+.project-image-container{
+  background: #fff;
+}
+
+.project-image{
+  object-fit: cover;
+  background: #fff;
+}
+
+.project-overlay{
+  opacity: 1; /* optional: keep it subtle always */
+  background: linear-gradient(to bottom,
+    rgba(0,0,0,0) 55%,
+    rgba(0,0,0,0.35) 100%);
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .projects-masonry{
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* still premium width */
+    gap: 28px;
+  }
+  .project-masonry-item.featured{
+    grid-column: auto; /* prevent awkward spans on tablets */
+  }
+}
+
 @media (max-width: 768px){
   .projects-masonry{
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 22px;
   }
-
   .project-content{
     padding: 22px;
   }
-
   .project-title{
-    font-size: 1.35rem;
+    font-size: 1.32rem;
   }
 }
-
 
         /* Project Gallery Modal */
         .gallery-modal {
