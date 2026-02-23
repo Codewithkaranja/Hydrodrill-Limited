@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Blog | Hydrodrill & Pump Solutions Ltd | Borehole Drilling Insights in Eastern Kenya</title>
+  <meta name="description" content="Borehole drilling guides for Machakos, Makueni, Kitui, Embu, Meru and Eastern Kenya. Costs, surveys, test pumping, solar borehole pumps and water system design." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://hydrodrillsolutions.com/blog.html" />
+  <meta name="theme-color" content="#006bd6" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/webp" href="HydroDrill-Solutions-favicon.webp" />
+  <link rel="apple-touch-icon" href="HydroDrill-Solutions-favicon.webp" />
+
+  <!-- CSS (reuse your globals) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Page CSS (inline for speed; you can move to blog.css) -->
+  <style>
+    :root{
+      --gradient-primary: linear-gradient(135deg,#006bd6 0%,#1a8cff 100%);
+      --gradient-secondary: linear-gradient(135deg,#dbae26 0%,#f7c948 100%);
+    }
+    body{ font-family:"Jost",sans-serif; }
+    .blog-hero{
+      position:relative;
+      min-height:52vh;
+      display:flex;
+      align-items:flex-end;
+      color:#fff;
+      padding: 90px 0 50px;
+      background:
+        linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.62)),
+        url("image - 2026-01-04T072020.069.webp");
+      background-size:cover;
+      background-position:center;
+    }
+    .blog-hero .badge{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:8px 14px; border-radius:999px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.14);
+      backdrop-filter: blur(10px);
+      letter-spacing:2px;
+      text-transform:uppercase;
+      font-size:.78rem;
+      color: rgba(255,255,255,.88);
+    }
+    .blog-hero h1{
+      font-family:"EB Garamond",serif;
+      font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+      line-height:1.05;
+      margin: 14px 0 12px;
+    }
+    .blog-hero p{
+      max-width: 70ch;
+      color: rgba(255,255,255,.86);
+      margin:0;
+    }
+    .blog-wrap{ padding: 70px 0; background:#0b1220; color:#fff; }
+    .blog-toolbar{
+      display:flex; gap:14px; flex-wrap:wrap; align-items:center;
+      justify-content:space-between; margin-bottom: 24px;
+    }
+    .search{
+      flex:1; min-width:260px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:14px;
+      padding:12px 14px;
+      color:#fff;
+      outline:none;
+    }
+    .chip-row{ display:flex; flex-wrap:wrap; gap:10px; }
+    .chip{
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color:#fff;
+      padding:10px 12px;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:.92rem;
+    }
+    .chip.active{ background: var(--gradient-primary); border-color: transparent; }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+      gap: 22px;
+    }
+    .card{
+      background: rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius: 18px;
+      overflow:hidden;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 20px 45px rgba(0,0,0,.35);
+    }
+    .card .thumb{
+      height: 180px;
+      background:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+        url("image - 2026-01-04T072020.069.webp");
+      background-size:cover;
+      background-position:center;
+    }
+    .card .body{ padding: 18px 18px 20px; }
+    .meta{
+      display:flex; gap:10px; flex-wrap:wrap;
+      font-size:.88rem;
+      color: rgba(255,255,255,.75);
+    }
+    .tag{
+      border: 1px solid rgba(255,255,255,.14);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: .82rem;
+    }
+    .card h2{
+      font-size: 1.18rem;
+      margin: 10px 0 10px;
+      line-height:1.2;
+    }
+    .card p{
+      margin:0 0 14px;
+      color: rgba(255,255,255,.82);
+      line-height:1.65;
+    }
+    .read{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 14px;
+      border-radius:999px;
+      border: 2px solid rgba(255,255,255,.16);
+      color:#fff;
+    }
+    .read:hover{ border-color: transparent; background: var(--gradient-secondary); color:#0b1220; }
+    .cta-strip{
+      margin-top: 40px;
+      padding: 26px;
+      border-radius: 18px;
+      background: var(--gradient-primary);
+      display:flex;
+      gap: 18px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .cta-strip h3{ margin:0; font-size:1.35rem; }
+    .cta-strip p{ margin:0; opacity:.92; max-width: 70ch; }
+    .cta-strip a{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding: 12px 16px;
+      background: rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius: 14px;
+      color:#fff;
+      font-weight:600;
+    }
+    @media (max-width: 768px){
+      .blog-hero{ padding: 92px 0 42px; }
+      .cta-strip{ text-align:left; }
+    }
+  </style>
+
+  <!-- Blog Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Blog",
+    "name":"Hydrodrill & Pump Solutions Blog",
+    "url":"https://hydrodrillsolutions.com/blog.html",
+    "description":"Borehole drilling guides and water system insights across Eastern Kenya.",
+    "publisher":{
+      "@type":"Organization",
+      "name":"Hydrodrill & Pump Solutions Limited",
+      "url":"https://hydrodrillsolutions.com"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Header (reuse yours) -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="/" class="logo">
+          <img src="HydroDrill-Solutions-favicon.webp" alt="Hydrodrill & Pump Solutions Limited" class="logo-image">
+        </a>
+
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="solar.html" class="nav-link">Solar Solutions</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item cta-nav"><a href="tel:+254769600161" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a></li>
+          </ul>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="blog-hero">
+    <div class="container">
+      <span class="badge">Eastern Kenya • Boreholes • Pumps • Solar</span>
+      <h1>Water Drilling Insights That Help You Build With Confidence</h1>
+      <p>Location-based guides for Machakos, Makueni, Kitui, Embu, Meru and beyond — costs, surveys, test pumping, solar borehole pumps and complete water systems.</p>
+    </div>
+  </section>
+
+  <!-- Blog List -->
+  <main class="blog-wrap">
+    <div class="container">
+
+      <div class="blog-toolbar">
+        <input id="blogSearch" class="search" type="search" placeholder="Search articles (e.g. Machakos cost, Kitui borehole, solar pump)..." />
+        <div class="chip-row" aria-label="Filter by county">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="machakos">Machakos</button>
+          <button class="chip" data-filter="makueni">Makueni</button>
+          <button class="chip" data-filter="kitui">Kitui</button>
+          <button class="chip" data-filter="embu">Embu</button>
+          <button class="chip" data-filter="meru">Meru</button>
+          <button class="chip" data-filter="cost">Costs</button>
+        </div>
+      </div>
+
+      <section class="grid" id="blogGrid">
+
+        <!-- 1 -->
+        <article class="card" data-tags="machakos drilling">
+          <div class="thumb" role="img" aria-label="Borehole drilling in Machakos"></div>
+          <div class="body">
+            <div class="meta"><span class="tag">Machakos</span><span>7–10 min read</span></div>
+            <h2><a href="blog/borehole-drilling-machakos.html">Borehole Drilling in Machakos: Process, Depths, Yield & What to Expect</a></h2>
+            <p>Learn what determines depth and water yield in Machakos, plus the full drilling process from survey to test pumping.</p>
+            <a class="read" href="blog/borehole-drilling-machakos.html">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="card" data-tags="makueni drilling">
+          <div class="thumb" role="img" aria-label="Borehole drilling in Makueni"></div>
+          <div class="body">
+            <div class="meta"><span class="tag">Makueni</span><span>6–9 min read</span></div>
+            <h2><a href="blog/borehole-drilling-makueni.html">Borehole Drilling in Makueni: Water Availability, Costs & Best Practices</a></h2>
+            <p>What you should check before drilling in Makueni — geology, siting, permits and maintenance planning.</p>
+            <a class="read" href="blog/borehole-drilling-makueni.html">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="card" data-tags="kitui drilling">
+          <div class="thumb" role="img" aria-label="Borehole drilling in Kitui"></div>
+          <div class="body">
+            <div class="meta"><span class="tag">Kitui</span><span>7–11 min read</span></div>
+            <h2><a href="blog/borehole-drilling-kitui.html">Borehole Drilling in Kitui: How to Get Reliable Water in Dry Zones</a></h2>
+            <p>Practical guidance for dry areas — proper survey, drilling depth planning and pump selection.</p>
+            <a class="read" href="blog/borehole-drilling-kitui.html">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="card" data-tags="embu drilling">
+          <div class="thumb" role="img" aria-label="Borehole drilling in Embu"></div>
+          <div class="body">
+            <div class="meta"><span class="tag">Embu</span><span>6–9 min read</span></div>
+            <h2><a href="blog/borehole-drilling-embu.html">Borehole Drilling in Embu: Surveys, Depths, Testing & Installation</a></h2>
+            <p>What influences borehole success in Embu — siting, casing, test pumping and water quality checks.</p>
+            <a class="read" href="blog/borehole-drilling-embu.html">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="card" data-tags="meru drilling">
+          <div class="thumb" role="img" aria-label="Borehole drilling in Meru"></div>
+          <div class="body">
+            <div class="meta"><span class="tag">Meru</span><span>6–10 min read</span></div>
+            <h2><a href="blog/borehole-drilling-meru.html">Borehole Drilling in Meru: Pump Choices, Solar Options & Tank Towers</a></h2>
+            <p>From electric vs solar pumps to elevated tank towers — how to plan a complete water system.</p>
+            <a class="read" href="blog/borehole-drilling-meru.html">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="card" data-tags="tharaka-nithi drilling">
+          <div class="thumb" role="img" aria-label="Borehole drilling in Tharaka Nithi"></div>
+          <div class="body">
+            <div class="meta"><span class="tag">Tharaka Nithi</span><span>6–9 min read</span></div>
+            <h2><a href="blog/borehole-drilling-tharaka-nithi.html">Borehole Drilling in Tharaka Nithi: A Home & Farm Water Guide</a></h2>
+            <p>A local drilling guide for homes and farms — survey, drilling, testing, and maintenance planning.</p>
+            <a class="read" href="blog/borehole-drilling-tharaka-nithi.html">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="card" data-tags="isiolo drilling">
+          <div class="thumb" role="img" aria-label="Borehole drilling in Isiolo"></div>
+          <div class="body">
+            <div class="meta"><span class="tag">Isiolo</span><span>6–9 min read</span></div>
+            <h2><a href="blog/borehole-drilling-isiolo.html">Borehole Drilling in Isiolo: Solar Boreholes for Remote Areas</a></h2>
+            <p>How solar pumping improves water reliability in remote sites — sizing, storage and common mistakes.</p>
+            <a class="read" href="blog/borehole-drilling-isiolo.html">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="card" data-tags="garissa drilling">
+          <div class="thumb" role="img" aria-label="Borehole drilling in Garissa"></div>
+          <div class="body">
+            <div class="meta"><span class="tag">Garissa</span><span>6–9 min read</span></div>
+            <h2><a href="blog/borehole-drilling-garissa.html">Borehole Drilling in Garissa: Heat, Depth, Pumping & Water Quality</a></h2>
+            <p>What to prioritize in hot climates — casing, pump protection, storage and quality testing.</p>
+            <a class="read" href="blog/borehole-drilling-garissa.html">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="card" data-tags="marsabit drilling">
+          <div class="thumb" role="img" aria-label="Borehole drilling in Marsabit"></div>
+          <div class="body">
+            <div class="meta"><span class="tag">Marsabit</span><span>6–10 min read</span></div>
+            <h2><a href="blog/borehole-drilling-marsabit.html">Borehole Drilling in Marsabit: Reliable Water Systems for Arid Zones</a></h2>
+            <p>Design for arid conditions — survey precision, yield realism, solar systems and tower storage.</p>
+            <a class="read" href="blog/borehole-drilling-marsabit.html">Read Article →</a>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="card" data-tags="cost drilling">
+          <div class="thumb" role="img" aria-label="Borehole drilling cost in Kenya"></div>
+          <div class="body">
+            <div class="meta"><span class="tag">Costs</span><span>8–12 min read</span></div>
+            <h2><a href="blog/borehole-drilling-cost-kenya.html">Borehole Drilling Cost in Kenya: What You Pay For (Survey → Pump → Tower)</a></h2>
+            <p>A clear breakdown of cost drivers — depth, casing, test pumping, pump selection and solar upgrades.</p>
+            <a class="read" href="blog/borehole-drilling-cost-kenya.html">Read Article →</a>
+          </div>
+        </article>
+
+      </section>
+
+      <section class="cta-strip" aria-label="Get a quotation">
+        <div>
+          <h3>Need a borehole quotation in Eastern Kenya?</h3>
+          <p>Tell us your location and intended use (home, farm, school, commercial). We’ll advise on survey, drilling depth planning, pumps, solar and storage options.</p>
+        </div>
+        <a href="contact.html">Request a Quote →</a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer (reuse yours) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Hydrodrill & Pump Solutions Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // year
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+    // simple search + filter
+    const search = document.getElementById("blogSearch");
+    const chips = document.querySelectorAll(".chip");
+    const cards = document.querySelectorAll("#blogGrid .card");
+
+    let activeFilter = "all";
+
+    function applyFilters(){
+      const q = (search.value || "").toLowerCase().trim();
+      cards.forEach(card => {
+        const tags = (card.dataset.tags || "").toLowerCase();
+        const text = card.innerText.toLowerCase();
+        const okFilter = activeFilter === "all" ? true : tags.includes(activeFilter);
+        const okSearch = !q ? true : (text.includes(q) || tags.includes(q));
+        card.style.display = (okFilter && okSearch) ? "" : "none";
+      });
+    }
+
+    chips.forEach(chip => {
+      chip.addEventListener("click", () => {
+        chips.forEach(c => c.classList.remove("active"));
+        chip.classList.add("active");
+        activeFilter = chip.dataset.filter;
+        applyFilters();
+      });
+    });
+
+    search.addEventListener("input", applyFilters);
+  </script>
+</body>
+</html>

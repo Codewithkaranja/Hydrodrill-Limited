@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title><!-- PAGE TITLE --></title>
+  <meta name="description" content="<!-- META DESCRIPTION -->" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="<!-- CANONICAL URL -->" />
+  <meta name="theme-color" content="#006bd6" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/webp" href="../HydroDrill-Solutions-favicon.webp" />
+
+  <link rel="stylesheet" href="../style.css" />
+
+  <style>
+    :root{
+      --gradient-primary: linear-gradient(135deg,#006bd6 0%,#1a8cff 100%);
+      --gradient-secondary: linear-gradient(135deg,#dbae26 0%,#f7c948 100%);
+    }
+    body{ font-family:"Jost",sans-serif; }
+    .post-hero{
+      padding: 92px 0 40px;
+      background:
+        linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.68)),
+        url("../image - 2026-01-04T072020.069.webp");
+      background-size:cover;
+      background-position:center;
+      color:#fff;
+    }
+    .crumbs{
+      display:flex; gap:10px; flex-wrap:wrap;
+      color: rgba(255,255,255,.82);
+      font-size:.92rem;
+    }
+    .crumbs a{ color:#fff; text-decoration:underline; }
+    h1{
+      font-family:"EB Garamond",serif;
+      font-size: clamp(2.1rem, 4.6vw, 3.2rem);
+      line-height:1.05;
+      margin: 12px 0 10px;
+    }
+    .summary{ max-width: 75ch; color: rgba(255,255,255,.86); margin:0; }
+    .post-wrap{ background:#0b1220; color:#fff; padding: 56px 0 70px; }
+    .layout{
+      display:grid;
+      grid-template-columns: 1.6fr .9fr;
+      gap: 26px;
+      align-items:start;
+    }
+    .article{
+      background: rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius: 18px;
+      padding: 22px;
+    }
+    .article h2{ margin-top: 18px; }
+    .article p, .article li{ color: rgba(255,255,255,.86); line-height:1.75; }
+    .article a{ color:#fff; text-decoration:underline; }
+    .sidebar{
+      position: sticky;
+      top: 90px;
+      background: rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius: 18px;
+      padding: 18px;
+    }
+    .box{
+      padding: 14px;
+      border-radius: 14px;
+      background: rgba(0,0,0,.22);
+      border:1px solid rgba(255,255,255,.10);
+      margin-bottom: 14px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border:1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.10);
+      color:#fff;
+      font-weight:700;
+      width:100%;
+    }
+    .btn:hover{ background: var(--gradient-secondary); color:#0b1220; border-color: transparent; }
+    .faq details{
+      background: rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius: 14px;
+      padding: 12px 14px;
+      margin: 10px 0;
+    }
+    .faq summary{ cursor:pointer; font-weight:700; }
+    @media (max-width: 992px){
+      .layout{ grid-template-columns: 1fr; }
+      .sidebar{ position: relative; top:auto; }
+    }
+  </style>
+
+  <!-- Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BlogPosting",
+    "headline":"<!-- SCHEMA HEADLINE -->",
+    "description":"<!-- SCHEMA DESCRIPTION -->",
+    "author":{"@type":"Organization","name":"Hydrodrill & Pump Solutions Ltd"},
+    "publisher":{"@type":"Organization","name":"Hydrodrill & Pump Solutions Ltd"},
+    "mainEntityOfPage":{"@type":"WebPage","@id":"<!-- CANONICAL URL -->"},
+    "image":"https://hydrodrillsolutions.com/image%20-%202026-02-01T124914.246.webp"
+  }
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../" class="logo">
+          <img src="../HydroDrill-Solutions-favicon.webp" alt="Hydrodrill & Pump Solutions Limited" class="logo-image">
+        </a>
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="../" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="../services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="../projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="../blog.html" class="nav-link active">Blog</a></li>
+            <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item cta-nav"><a href="tel:+254769600161" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a></li>
+          </ul>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="post-hero">
+    <div class="container">
+      <div class="crumbs">
+        <a href="../">Home</a> / <a href="../blog.html">Blog</a> / <span><!-- COUNTY/TOPIC --></span>
+      </div>
+      <h1><!-- H1 TITLE --></h1>
+      <p class="summary"><!-- SHORT SUMMARY --></p>
+    </div>
+  </section>
+
+  <main class="post-wrap">
+    <div class="container">
+      <div class="layout">
+
+        <article class="article">
+          <!-- ✅ MAIN CONTENT HERE -->
+          <h2>What this guide covers</h2>
+          <ul>
+            <li>What determines borehole depth and yield</li>
+            <li>Survey, drilling, casing, gravel pack and development</li>
+            <li>Test pumping and water quality checks</li>
+            <li>Pump selection (electric vs solar) and storage planning</li>
+          </ul>
+
+          <h2>Step-by-step borehole process</h2>
+          <p>Most successful boreholes follow a strict workflow: site survey → drilling → casing & screens → gravel pack → well development → test pumping → pump installation → storage and distribution.</p>
+
+          <h2>Key cost drivers</h2>
+          <p>Depth, casing type, geology, accessibility, test pumping duration, pump capacity and whether solar + tank towers are included.</p>
+
+          <h2>When to call Hydrodrill</h2>
+          <p>If you’re planning a home, farm, school or commercial water system, we can advise on the right survey approach, expected depth range, pump sizing and storage for stable pressure.</p>
+
+          <div class="faq">
+            <h2>FAQs</h2>
+            <details>
+              <summary>How long does drilling take?</summary>
+              <p>Time depends on depth, geology and access. Most projects include drilling, development, testing and installation stages.</p>
+            </details>
+            <details>
+              <summary>Do you handle solar pumping systems?</summary>
+              <p>Yes — we design and install solar borehole systems including panels, controllers, mounting structures, and storage.</p>
+            </details>
+          </div>
+
+          <p><strong>Ready for a quote?</strong> <a href="../contact.html">Request a quotation here</a> or call <a href="tel:+254769600161">0769 600 161</a>.</p>
+        </article>
+
+        <aside class="sidebar">
+          <div class="box">
+            <strong>Fast Quote Checklist</strong>
+            <ul style="margin:10px 0 0; padding-left:18px; color:rgba(255,255,255,.86);">
+              <li>Location (town + county)</li>
+              <li>Use: home / farm / school / commercial</li>
+              <li>Tank size (if known)</li>
+              <li>Solar or electric pump?</li>
+            </ul>
+          </div>
+
+          <a class="btn" href="../contact.html">Request a Quote →</a>
+          <a class="btn" href="https://wa.me/254769600161?text=Hello%20Hydrodrill%20I%20need%20a%20borehole%20quotation%20in%20Eastern%20Kenya" target="_blank" rel="noopener">WhatsApp →</a>
+
+          <div class="box">
+            <strong>More Articles</strong>
+            <p style="margin:10px 0 0; color:rgba(255,255,255,.86);">Go back to the blog hub to explore county guides and cost breakdowns.</p>
+            <a class="btn" href="../blog.html">Browse Blog →</a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Hydrodrill & Pump Solutions Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+  <script>document.getElementById("currentYear").textContent = new Date().getFullYear();</script>
+</body>
+</html>
