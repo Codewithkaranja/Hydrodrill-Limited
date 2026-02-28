@@ -1,37 +1,600 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Borehole Yield Explained (Litres Per Hour) | Hydrodrill Kenya</title>
-<meta name="description" content="Borehole yield explained: what litres per hour means, how test pumping determines sustainable yield, and how to size pumps for homes, farms and schools."/>
-<meta name="robots" content="index,follow"/><link rel="canonical" href="https://hydrodrillsolutions.com/blog/borehole-yield-explained-kenya.html"/>
-<link rel="icon" type="image/webp" href="../HydroDrill-Solutions-favicon.webp"/><link rel="stylesheet" href="../style.css"/>
-</head><body>
-<header class="header"><div class="container"><nav class="navbar">
-<a href="../" class="logo"><img class="logo-image" src="../HydroDrill-Solutions-favicon.webp" alt="Hydrodrill"></a>
-<div class="nav-menu" id="navMenu"><ul class="nav-list">
-<li class="nav-item"><a class="nav-link" href="../">Home</a></li>
-<li class="nav-item"><a class="nav-link active" href="../blog.html">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="../services.html">Services</a></li>
-</ul></div><button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
-</nav></div></header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-<main class="container" style="padding:110px 0 60px; max-width:980px;">
-<p><a href="../blog.html">← Back to Blog</a></p>
-<h1 style="font-family:'EB Garamond',serif;">Borehole Yield Explained (Litres Per Hour)</h1>
-<h2>What “yield” really means</h2>
-<p>Yield is the water a borehole can produce reliably over time. The key word is <strong>sustainable</strong> yield.</p>
+  <!-- Primary SEO -->
+  <title>Borehole Yield Explained in Kenya: What It Means, How It’s Measured & How to Plan Your System | Hydrodrill</title>
+  <meta name="description" content="Borehole yield explained in Kenya: yield vs flow vs pressure, sustainable yield, test pumping basics, why yields drop, how to size pumps and tanks, and how to avoid dry-running. Includes simple examples and a mini planning tool." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://hydrodrillsolutions.com/blog/borehole-yield-explained-kenya.html" />
 
-<h2>How yield is measured</h2>
-<ul>
-<li>Test pumping (often extended hours)</li>
-<li>Recovery rate + drawdown observation</li>
-<li>Performance reporting</li>
-</ul>
+  <!-- Fav + CSS -->
+  <link rel="icon" type="image/webp" href="../HydroDrill-Solutions-favicon.webp" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../blogpost.css" />
 
-<h2>Why yield matters for pump sizing</h2>
-<p>A pump that exceeds yield can cause excessive drawdown and long-term performance issues. Correct sizing protects the system.</p>
+  <!-- Social (OG/Twitter) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Hydrodrill Solutions" />
+  <meta property="og:title" content="Borehole Yield Explained in Kenya: What It Means, How It’s Measured & How to Plan Your System" />
+  <meta property="og:description" content="Stop guessing. Learn what borehole yield really means, how test pumping confirms it, and how to size pumps and tanks so your taps stay stable." />
+  <meta property="og:url" content="https://hydrodrillsolutions.com/blog/borehole-yield-explained-kenya.html" />
+  <meta property="og:image" content="https://hydrodrillsolutions.com/assets/og/borehole-yield-explained-kenya.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-<p><strong>Service:</strong> <a href="../services.html#test-pumping">Test Pumping</a> • <a href="../contact.html">Request help</a></p>
-</main>
-<footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; <span id="currentYear"></span> Hydrodrill</p></div></div></footer>
-<script>document.getElementById("currentYear").textContent=new Date().getFullYear();</script>
-</body></html>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Borehole Yield Explained in Kenya: What It Means, How It’s Measured & How to Plan Your System",
+    "description":"A practical guide to understanding borehole yield in Kenya: yield vs flow vs pressure, sustainable yield, test pumping basics, why yields drop, and how to size pumps, tanks and plumbing for stable supply.",
+    "author":{"@type":"Organization","name":"Hydrodrill Solutions"},
+    "publisher":{
+      "@type":"Organization",
+      "name":"Hydrodrill Solutions",
+      "logo":{"@type":"ImageObject","url":"https://hydrodrillsolutions.com/assets/brand/hydrodrill-logo.webp"}
+    },
+    "mainEntityOfPage":"https://hydrodrillsolutions.com/blog/borehole-yield-explained-kenya.html",
+    "image":"https://hydrodrillsolutions.com/assets/og/borehole-yield-explained-kenya.webp",
+    "datePublished":"2026-02-26",
+    "dateModified":"2026-02-26"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What does borehole yield mean in Kenya?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Borehole yield is how much water a borehole can produce over time, usually stated as litres per hour (L/hr), litres per minute (L/min), or cubic metres per hour (m³/hr). The most useful figure is sustainable yield, confirmed by test pumping."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Is yield the same as pressure at the tap?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. Yield is how much water the borehole can supply. Pressure is how strongly water is delivered through your plumbing. You can have good yield with poor pressure (bad pipe sizing) or good pressure with limited yield (small flow but high head)."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How is borehole yield measured?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yield is measured using test pumping after drilling and development. A controlled pump rate is used while monitoring water level drawdown and recovery to estimate sustainable yield."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Why do some boreholes yield less in dry season?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Aquifer recharge changes seasonally. In dry months, the water level can drop and recovery can slow. Oversized pumps, poor construction, clogging, or nearby competing boreholes can also reduce effective yield."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Mobile overlay + panel (styled by blogpost.css) -->
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <div class="nav-panel" id="navPanel" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div class="panel-head">
+      <div class="panel-title">
+        <img src="../HydroDrill-Solutions-favicon.webp" alt="Hydrodrill" style="width:36px;height:36px;border-radius:12px;">
+        <span>Menu</span>
+      </div>
+      <button class="panel-close" id="navClose" aria-label="Close menu"></button>
+    </div>
+    <div class="panel-body">
+      <ul class="panel-links">
+        <li><a href="../">Home <span>→</span></a></li>
+        <li><a href="../blog.html">Blog <span>→</span></a></li>
+        <li><a href="../services.html#rehabilitation">Rehabilitation <span>→</span></a></li>
+        <li><a href="../contact.html">Contact <span>→</span></a></li>
+      </ul>
+      <div class="panel-cta">
+        <p><strong>Need help interpreting yield?</strong> Share your test pumping notes + intended use.</p>
+        <a href="../contact.html">Request sizing support</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../" class="logo" aria-label="Hydrodrill Home">
+          <img class="logo-image" src="../HydroDrill-Solutions-favicon.webp" alt="Hydrodrill Solutions logo">
+        </a>
+
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="../blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="../services.html#rehabilitation">Rehabilitation</a></li>
+            <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="navPanel" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <div class="page-container">
+
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <p class="crumbs">
+          <a href="../">Home</a> <span aria-hidden="true">›</span>
+          <a href="../blog.html">Blog</a> <span aria-hidden="true">›</span>
+          <span>Borehole Yield Explained</span>
+        </p>
+      </nav>
+
+      <!-- Hero -->
+      <section class="hero" aria-label="Article hero">
+        <div class="hero-inner">
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Yield • Test Pumping • Kenya</span>
+          </div>
+
+          <h1>Borehole Yield Explained in Kenya: What It Means, How It’s Measured & How to Plan Your System</h1>
+
+          <p class="lead">
+            “Yield” is the word everyone hears after drilling—then confusion starts.
+            Yield is not pressure. It’s not “how fast the tap feels.”
+            Yield is about <strong>how much water the borehole can sustainably supply</strong> without failing in dry season or damaging the pump.
+          </p>
+
+          <div class="meta" aria-label="Article meta">
+            <span>🗓️ <time datetime="2026-02-26">Feb 26, 2026</time></span>
+            <span>⏱️ 9–13 min read</span>
+            <span>✅ Simple examples + checklist</span>
+          </div>
+
+          <div class="badges" aria-label="Key topics">
+            <span class="badge">Yield</span>
+            <span class="badge gold">Sustainable yield</span>
+            <span class="badge">Test pumping</span>
+            <span class="badge">Pump sizing</span>
+            <span class="badge">Tank sizing</span>
+            <span class="badge">Pressure vs flow</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content grid -->
+      <section class="grid" aria-label="Article content">
+
+        <!-- Main -->
+        <article class="card" itemscope itemtype="https://schema.org/Article">
+          <div class="pad">
+
+            <!-- TOC -->
+            <div class="card toc" aria-label="Table of contents">
+              <strong>On this page</strong>
+              <ol>
+                <li><a href="#definitions">Yield, flow, pressure: the difference</a></li>
+                <li><a href="#units">Common yield units in Kenya (L/min, m³/hr)</a></li>
+                <li><a href="#sustainable">Sustainable yield (the only number that matters)</a></li>
+                <li><a href="#test">How test pumping measures yield</a></li>
+                <li><a href="#drops">Why yield drops (and what’s not actually yield)</a></li>
+                <li><a href="#sizing">How to size pump + tank using yield</a></li>
+                <li><a href="#examples">Simple examples (home, rentals, farm)</a></li>
+                <li><a href="#mistakes">Mistakes that cause “low water” complaints</a></li>
+                <li><a href="#mini-tool">Mini yield-to-system tool</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ol>
+            </div>
+
+            <div class="section" id="definitions">
+              <h2>1) Yield, flow, pressure: the difference</h2>
+              <p>
+                These three get mixed up all the time:
+                <strong>yield</strong> is what the borehole can supply,
+                <strong>flow</strong> is how much water is moving through the pipe at that moment,
+                and <strong>pressure</strong> is the force pushing water through your plumbing.
+              </p>
+
+              <ul class="checklist">
+                <li><span class="icon">✓</span><div><strong>Yield (borehole capacity)</strong><br><span class="muted">The supply limit of the borehole/aquifer system over time.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Flow (instant delivery)</strong><br><span class="muted">How much water per minute/hour is coming out right now.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Pressure (tap “strength”)</strong><br><span class="muted">A plumbing/pump design result—pipe sizes, elevation, booster system, valves.</span></div></li>
+              </ul>
+
+              <div class="callout" style="border-left-color: var(--warning-color);">
+                <strong>Key insight:</strong> You can have a good-yield borehole but weak taps if pipes are undersized or pressure design is wrong.
+              </div>
+            </div>
+
+            <div class="section" id="units">
+              <h2>2) Common yield units in Kenya (and quick conversions)</h2>
+              <p>
+                Yield is commonly quoted as <strong>L/min</strong>, <strong>L/hr</strong>, or <strong>m³/hr</strong>.
+                What matters is that you convert everything into a daily plan (litres per day) for tank and schedule design.
+              </p>
+
+              <div class="callout">
+                <strong>Quick conversions:</strong>
+                <div class="muted" style="margin-top:8px; line-height:1.8;">
+                  • 1 m³ = 1,000 litres<br>
+                  • 1 m³/hr = 1,000 L/hr<br>
+                  • L/min × 60 = L/hr<br>
+                  • L/hr × pumping hours/day = litres/day
+                </div>
+              </div>
+            </div>
+
+            <div class="section" id="sustainable">
+              <h2>3) Sustainable yield (the only number that matters)</h2>
+              <p>
+                Sustainable yield is the pumping rate the borehole can maintain without the water level dropping too far or failing to recover.
+                Some boreholes can produce a high burst for a short time, then collapse in performance.
+                Sustainable yield is what protects you from dry-running pumps and “it worked in rainy season only” stories.
+              </p>
+
+              <div class="callout">
+                <strong>Think of it like this:</strong> A borehole is a battery + charger. You can “draw” water (battery),
+                but recharge rate (aquifer recovery) controls what you can sustainably take.
+              </div>
+            </div>
+
+            <div class="section" id="test">
+              <h2>4) How test pumping measures yield</h2>
+              <p>
+                After drilling and development, test pumping runs the borehole at a controlled rate while monitoring water level behavior.
+                The goal is to see drawdown (how far the water level falls) and recovery (how fast it rises after pumping).
+                That behavior is what allows professionals to recommend a safe operating rate.
+              </p>
+
+              <ul class="checklist">
+                <li><span class="icon">1</span><div><strong>Set a pumping rate</strong><br><span class="muted">Run a pump at a chosen flow and keep it steady.</span></div></li>
+                <li><span class="icon">2</span><div><strong>Monitor water levels</strong><br><span class="muted">Track drawdown during pumping and recovery after stopping.</span></div></li>
+                <li><span class="icon">3</span><div><strong>Interpret stability</strong><br><span class="muted">Stable behavior supports sustainable yield planning.</span></div></li>
+              </ul>
+
+              <div class="callout" style="border-left-color: var(--warning-color);">
+                <strong>Don’t skip this:</strong> Buying a final pump before test pumping often leads to resizing (buying twice).
+              </div>
+            </div>
+
+            <div class="section" id="drops">
+              <h2>5) Why yield “drops” (and what’s not actually yield)</h2>
+              <p>
+                Some yield changes are real, others are system issues that look like yield problems.
+                Dry season can reduce recharge, but many “low yield” complaints are caused by wrong pump sizing, leaks, blocked filters, or undersized pipes.
+              </p>
+
+              <ul class="checklist">
+                <li><span class="icon">✓</span><div><strong>Real reasons</strong><br><span class="muted">Seasonal recharge drop, competing nearby abstraction, clogging/siltation, formation changes.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>System reasons that look like yield issues</strong><br><span class="muted">Pump too big, dry-run protection missing, controller mis-set, pipes too small, tank float problems, leaks.</span></div></li>
+              </ul>
+            </div>
+
+            <div class="section" id="sizing">
+              <h2>6) How to size pump + tank using yield</h2>
+              <p>
+                The simplest reliable approach is <strong>storage-first</strong>:
+                pump at a safe rate into tanks, then supply users from storage with stable pressure.
+                This lets you match demand peaks without forcing the borehole to deliver peak flow instantly.
+              </p>
+
+              <ul class="checklist">
+                <li><span class="icon">1</span><div><strong>Pick a safe pumping rate</strong><br><span class="muted">Based on test pumping (sustainable yield).</span></div></li>
+                <li><span class="icon">2</span><div><strong>Choose pumping hours/day</strong><br><span class="muted">Solar vs grid affects your feasible pumping window.</span></div></li>
+                <li><span class="icon">3</span><div><strong>Plan litres/day</strong><br><span class="muted">Rate × hours = daily volume available.</span></div></li>
+                <li><span class="icon">4</span><div><strong>Tank buffers peaks</strong><br><span class="muted">Tank size reduces “low pressure” and protects the borehole.</span></div></li>
+              </ul>
+
+              <div class="callout">
+                <strong>Simple sizing thought:</strong> If your borehole sustainably gives 2,000 L/hr and you pump 6 hours/day,
+                that’s about 12,000 L/day available for storage and use.
+              </div>
+            </div>
+
+            <div class="section" id="examples">
+              <h2>7) Simple examples (home, rentals, farm)</h2>
+
+              <div class="callout">
+                <strong>Home:</strong> Often works best with steady pumping to a tank + a pressure booster for house taps.
+                <div class="muted" style="margin-top:8px; line-height:1.7;">
+                  Goal: stable supply + good pressure. Tank buffers morning/evening peaks.
+                </div>
+              </div>
+
+              <div class="callout">
+                <strong>Rentals:</strong> Peaks are bigger and complaints are louder.
+                <div class="muted" style="margin-top:8px; line-height:1.7;">
+                  Goal: bigger storage + pressure control. Direct pumping without storage often disappoints tenants.
+                </div>
+              </div>
+
+              <div class="callout">
+                <strong>Farm:</strong> Think in schedules and zones.
+                <div class="muted" style="margin-top:8px; line-height:1.7;">
+                  Goal: match irrigation zones to sustainable yield, use storage, and protect drippers/sprinklers with filtration.
+                </div>
+              </div>
+            </div>
+
+            <div class="section" id="mistakes">
+              <h2>8) Mistakes that cause “low water” complaints</h2>
+              <p>
+                Many projects blame the borehole when the real issue is system design.
+                Fix these first before calling it “low yield.”
+              </p>
+
+              <ul class="checklist">
+                <li><span class="icon">✕</span><div><strong>Oversized pump</strong><br><span class="muted">Pulls faster than the borehole can recover → dry-running and failures.</span></div></li>
+                <li><span class="icon">✕</span><div><strong>No storage buffer</strong><br><span class="muted">Peak demand hits borehole directly → pressure drops and downtime.</span></div></li>
+                <li><span class="icon">✕</span><div><strong>Undersized pipes</strong><br><span class="muted">Creates huge friction losses → weak taps even with good supply.</span></div></li>
+                <li><span class="icon">✕</span><div><strong>Missing protection/controls</strong><br><span class="muted">No dry-run protection or faulty float switches → pump damage and interruptions.</span></div></li>
+              </ul>
+
+              <div class="divider"></div>
+
+              <div class="cta" aria-label="Call to action">
+                <h3>Want help reading your yield results?</h3>
+                <p>
+                  Send your test pumping details (rate, duration, drawdown/recovery notes) and your intended use.
+                  We’ll advise a sensible pump + tank plan that protects the borehole and gives stable taps.
+                </p>
+                <div class="btn-row">
+                  <a class="btn primary" href="../contact.html">Request sizing support</a>
+                  <a class="btn" href="../blog.html">Back to blog</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="section" id="mini-tool">
+              <h2>9) Mini yield-to-system tool (quick guidance)</h2>
+
+              <div class="card" style="background: var(--surface); border-radius: 14px;">
+                <div class="pad">
+                  <p style="margin-top:0; color: var(--muted);">
+                    Enter what you know to get a practical “next move” for sizing and stability.
+                  </p>
+
+                  <div style="display:grid; gap:10px; max-width: 760px;">
+                    <label style="font-weight:900;">Your yield unit</label>
+                    <select id="unit" style="padding:12px;border-radius:12px;border:1px solid var(--line);background:#fff;font-weight:800;">
+                      <option value="lmin" selected>Litres per minute (L/min)</option>
+                      <option value="lhr">Litres per hour (L/hr)</option>
+                      <option value="m3hr">Cubic metres per hour (m³/hr)</option>
+                    </select>
+
+                    <label style="font-weight:900;">Yield value (number only)</label>
+                    <input id="yieldVal" type="number" inputmode="decimal" placeholder="e.g., 25" style="padding:12px;border-radius:12px;border:1px solid var(--line);background:#fff;font-weight:800;" />
+
+                    <label style="font-weight:900;">Pumping hours per day (planned)</label>
+                    <select id="hours" style="padding:12px;border-radius:12px;border:1px solid var(--line);background:#fff;font-weight:800;">
+                      <option value="4">4 hours/day</option>
+                      <option value="6" selected>6 hours/day</option>
+                      <option value="8">8 hours/day</option>
+                      <option value="10">10 hours/day</option>
+                      <option value="12">12 hours/day</option>
+                    </select>
+
+                    <label style="font-weight:900;">Intended use</label>
+                    <select id="use" style="padding:12px;border-radius:12px;border:1px solid var(--line);background:#fff;font-weight:800;">
+                      <option value="home" selected>Home / domestic</option>
+                      <option value="rentals">Rentals / apartments</option>
+                      <option value="farm">Farm / irrigation</option>
+                      <option value="institution">School / institution</option>
+                    </select>
+
+                    <button id="toolBtn" class="btn primary" type="button" style="width:max-content;">
+                      Calculate daily volume + recommendation
+                    </button>
+
+                    <div id="toolOut" class="callout" style="display:none; margin:0;">
+                      <strong id="toolTitle">Result:</strong>
+                      <div id="toolBody" class="muted" style="margin-top:6px; line-height:1.7;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section faq" id="faq">
+              <h2>10) FAQ</h2>
+
+              <details>
+                <summary>Is a higher yield always better?</summary>
+                <p>
+                  Higher yield helps, but your system still needs correct pump sizing, storage, and plumbing.
+                  A high-yield borehole can still perform poorly if the system is designed badly.
+                </p>
+              </details>
+
+              <details>
+                <summary>Can I improve yield after drilling?</summary>
+                <p>
+                  Sometimes performance improves with proper development, rehabilitation, or removing clogging/siltation.
+                  But if the aquifer is limited, the best “improvement” is usually storage and smarter demand scheduling.
+                </p>
+              </details>
+
+              <details>
+                <summary>What’s a “good” yield in Kenya?</summary>
+                <p>
+                  “Good” depends on your demand. A home can be fine with modest yield if storage is planned well,
+                  while farms and institutions may need higher sustainable yield or larger storage to meet schedules.
+                </p>
+              </details>
+            </div>
+
+            <div class="author" aria-label="Author box">
+              <div class="avatar" aria-hidden="true">HD</div>
+              <div>
+                <strong>Hydrodrill Solutions</strong>
+                <small>Hydrogeological surveys • Test pumping • Pump & tank sizing • Water system planning</small>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="sticky" aria-label="Sidebar">
+          <div class="card">
+            <div class="pad">
+              <strong>Fast summary</strong>
+              <p class="muted" style="margin:10px 0 0; line-height:1.7;">
+                Yield ≠ pressure. Sustainable yield is confirmed by test pumping.
+                Storage-first design protects the borehole and keeps taps stable.
+              </p>
+
+              <div class="divider"></div>
+
+              <strong>Related pages</strong>
+              <ul style="margin:10px 0 0; padding-left:18px; color:var(--muted); line-height:1.8;">
+                <li><a href="../contact.html" style="color:inherit;">Request sizing support</a></li>
+                <li><a href="../blog.html" style="color:inherit;">More guides</a></li>
+                <li><a href="../services.html#rehabilitation" style="color:inherit;">Rehabilitation</a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Hydrodrill Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    const yearEl = document.getElementById("currentYear");
+    if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+    // Mobile nav
+    (function () {
+      const body = document.body;
+      const toggle = document.getElementById("navToggle");
+      const overlay = document.getElementById("navOverlay");
+      const closeBtn = document.getElementById("navClose");
+      const panel = document.getElementById("navPanel");
+
+      if (!toggle || !overlay || !closeBtn || !panel) return;
+
+      function openNav(){
+        body.classList.add("nav-open");
+        toggle.setAttribute("aria-expanded","true");
+      }
+      function closeNav(){
+        body.classList.remove("nav-open");
+        toggle.setAttribute("aria-expanded","false");
+      }
+
+      toggle.addEventListener("click", () => {
+        const isOpen = body.classList.contains("nav-open");
+        isOpen ? closeNav() : openNav();
+      });
+
+      overlay.addEventListener("click", closeNav);
+      closeBtn.addEventListener("click", closeNav);
+
+      panel.addEventListener("click", (e) => {
+        const a = e.target.closest("a");
+        if (a) closeNav();
+      });
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeNav();
+      });
+    })();
+
+    // Mini yield-to-system tool
+    (function(){
+      const unit = document.getElementById("unit");
+      const yieldVal = document.getElementById("yieldVal");
+      const hours = document.getElementById("hours");
+      const use = document.getElementById("use");
+      const btn = document.getElementById("toolBtn");
+
+      const out = document.getElementById("toolOut");
+      const title = document.getElementById("toolTitle");
+      const body = document.getElementById("toolBody");
+
+      if (!unit || !yieldVal || !hours || !use || !btn || !out || !title || !body) return;
+
+      function toLhr(v, u){
+        if (!isFinite(v) || v <= 0) return 0;
+        if (u === "lmin") return v * 60;
+        if (u === "m3hr") return v * 1000;
+        return v; // lhr
+      }
+
+      function recommend(){
+        const v = parseFloat(yieldVal.value);
+        const u = unit.value;
+        const h = parseFloat(hours.value);
+        const t = use.value;
+
+        const lhr = toLhr(v, u);
+        if (!lhr || !h) {
+          out.style.display = "block";
+          title.textContent = "Result: Add a valid yield number";
+          body.innerHTML = "Enter a positive yield value (e.g., 25) then calculate again.";
+          return;
+        }
+
+        const daily = lhr * h;
+
+        let head = "Use storage-first sizing";
+        let points = [
+          `Estimated daily volume at your plan: <strong>${Math.round(daily).toLocaleString()} litres/day</strong> (assuming steady pumping).`,
+          "Confirm this with test pumping data (sustainable yield), not only a short flow test.",
+          "Use a tank buffer so peak demand doesn’t hit the borehole directly."
+        ];
+
+        if (t === "rentals") {
+          head = "Rentals: storage + pressure stability";
+          points.push("For rentals, plan larger storage and a pressure system to avoid peak-hour complaints.");
+        } else if (t === "farm") {
+          head = "Farm: zone irrigation to match sustainable yield";
+          points.push("For farms, irrigate in zones and align pumping hours to daylight if solar is used.");
+        } else if (t === "institution") {
+          head = "Institutions: redundancy + hygiene planning";
+          points.push("For institutions, plan storage buffers, stable pressure, and quality checks if used for drinking/cooking.");
+        } else {
+          points.push("For homes, prioritize stable supply + good pressure via correct pipe sizing and a booster if needed.");
+        }
+
+        points.push("If taps feel weak, check pipe sizing, leaks, and pressure design before blaming yield.");
+
+        out.style.display = "block";
+        title.textContent = `Result: ${head}`;
+        body.innerHTML = `<ul style="margin:0; padding-left:18px;">${points.map(x => `<li>${x}</li>`).join("")}</ul>`;
+      }
+
+      btn.addEventListener("click", recommend);
+    })();
+  </script>
+</body>
+</html>

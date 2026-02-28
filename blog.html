@@ -19,160 +19,10 @@
   <link rel="icon" type="image/webp" href="HydroDrill-Solutions-favicon.webp" />
   <link rel="apple-touch-icon" href="HydroDrill-Solutions-favicon.webp" />
 
-  <!-- CSS (reuse your globals) -->
+  <!-- Global CSS -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Page CSS (inline for speed; you can move to blog.css) -->
-  <style>
-    :root{
-      --gradient-primary: linear-gradient(135deg,#006bd6 0%,#1a8cff 100%);
-      --gradient-secondary: linear-gradient(135deg,#dbae26 0%,#f7c948 100%);
-    }
-    body{ font-family:"Jost",sans-serif; }
-    .blog-hero{
-      position:relative;
-      min-height:52vh;
-      display:flex;
-      align-items:flex-end;
-      color:#fff;
-      padding: 90px 0 50px;
-      background:
-        linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.62)),
-        url("image - 2026-01-04T072020.069.webp");
-      background-size:cover;
-      background-position:center;
-    }
-    .blog-hero .badge{
-      display:inline-flex; gap:10px; align-items:center;
-      padding:8px 14px; border-radius:999px;
-      background:rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.14);
-      backdrop-filter: blur(10px);
-      letter-spacing:2px;
-      text-transform:uppercase;
-      font-size:.78rem;
-      color: rgba(255,255,255,.88);
-    }
-    .blog-hero h1{
-      font-family:"EB Garamond",serif;
-      font-size: clamp(2.2rem, 4.5vw, 3.5rem);
-      line-height:1.05;
-      margin: 14px 0 12px;
-    }
-    .blog-hero p{
-      max-width: 70ch;
-      color: rgba(255,255,255,.86);
-      margin:0;
-    }
-    .blog-wrap{ padding: 70px 0; background:#0b1220; color:#fff; }
-    .blog-toolbar{
-      display:flex; gap:14px; flex-wrap:wrap; align-items:center;
-      justify-content:space-between; margin-bottom: 24px;
-    }
-    .search{
-      flex:1; min-width:260px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.12);
-      border-radius:14px;
-      padding:12px 14px;
-      color:#fff;
-      outline:none;
-    }
-    .chip-row{ display:flex; flex-wrap:wrap; gap:10px; }
-    .chip{
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      color:#fff;
-      padding:10px 12px;
-      border-radius:999px;
-      cursor:pointer;
-      font-size:.92rem;
-    }
-    .chip.active{ background: var(--gradient-primary); border-color: transparent; }
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
-      gap: 22px;
-    }
-    .card{
-      background: rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 18px;
-      overflow:hidden;
-      transition: transform .25s ease, box-shadow .25s ease;
-    }
-    .card:hover{
-      transform: translateY(-6px);
-      box-shadow: 0 20px 45px rgba(0,0,0,.35);
-    }
-    .card .thumb{
-      height: 180px;
-      background:
-        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-        url("image - 2026-01-04T072020.069.webp");
-      background-size:cover;
-      background-position:center;
-    }
-    .card .body{ padding: 18px 18px 20px; }
-    .meta{
-      display:flex; gap:10px; flex-wrap:wrap;
-      font-size:.88rem;
-      color: rgba(255,255,255,.75);
-    }
-    .tag{
-      border: 1px solid rgba(255,255,255,.14);
-      padding: 4px 10px;
-      border-radius: 999px;
-      font-size: .82rem;
-    }
-    .card h2{
-      font-size: 1.18rem;
-      margin: 10px 0 10px;
-      line-height:1.2;
-    }
-    .card p{
-      margin:0 0 14px;
-      color: rgba(255,255,255,.82);
-      line-height:1.65;
-    }
-    .read{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:10px 14px;
-      border-radius:999px;
-      border: 2px solid rgba(255,255,255,.16);
-      color:#fff;
-    }
-    .read:hover{ border-color: transparent; background: var(--gradient-secondary); color:#0b1220; }
-    .cta-strip{
-      margin-top: 40px;
-      padding: 26px;
-      border-radius: 18px;
-      background: var(--gradient-primary);
-      display:flex;
-      gap: 18px;
-      align-items:center;
-      justify-content:space-between;
-      flex-wrap:wrap;
-    }
-    .cta-strip h3{ margin:0; font-size:1.35rem; }
-    .cta-strip p{ margin:0; opacity:.92; max-width: 70ch; }
-    .cta-strip a{
-      display:inline-flex;
-      gap:10px;
-      align-items:center;
-      padding: 12px 16px;
-      background: rgba(255,255,255,.12);
-      border:1px solid rgba(255,255,255,.18);
-      border-radius: 14px;
-      color:#fff;
-      font-weight:600;
-    }
-    @media (max-width: 768px){
-      .blog-hero{ padding: 92px 0 42px; }
-      .cta-strip{ text-align:left; }
-    }
-  </style>
-
+ <link rel="stylesheet" href="blog.css">
   <!-- Blog Schema -->
   <script type="application/ld+json">
   {
@@ -191,11 +41,12 @@
 </head>
 
 <body>
-  <!-- Header (reuse yours) -->
+
+  <!-- Header -->
   <header class="header">
     <div class="container">
       <nav class="navbar">
-        <a href="/" class="logo">
+        <a href="/" class="logo" aria-label="Hydrodrill Home">
           <img src="HydroDrill-Solutions-favicon.webp" alt="Hydrodrill & Pump Solutions Limited" class="logo-image">
         </a>
 
@@ -205,14 +56,17 @@
             <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
             <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
             <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="solar.html" class="nav-link">Solar Solutions</a></li>
-            <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link active">Blogs</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            <li class="nav-item cta-nav"><a href="tel:+254769600161" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a></li>
+            <li class="nav-item cta-nav">
+              <a href="tel:+254769600161" class="btn btn-primary">
+                <i class="fas fa-phone-alt"></i> Call Now
+              </a>
+            </li>
           </ul>
         </div>
 
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" type="button">
           <span></span><span></span><span></span>
         </button>
       </nav>
@@ -223,7 +77,7 @@
   <section class="blog-hero">
     <div class="container">
       <span class="badge">Eastern Kenya • Boreholes • Pumps • Solar</span>
-      <h1>Water Drilling Insights That Help You Build With Confidence</h1>
+      <h1>Water Drilling Insights</h1>
       <p>Location-based guides for Machakos, Makueni, Kitui, Embu, Meru and beyond — costs, surveys, test pumping, solar borehole pumps and complete water systems.</p>
     </div>
   </section>
@@ -233,21 +87,20 @@
     <div class="container">
 
       <div class="blog-toolbar">
-        <input id="blogSearch" class="search" type="search" placeholder="Search articles (e.g. Machakos cost, Kitui borehole, solar pump)..." />
+        <input id="blogSearch" class="search" type="search" placeholder="Search articles (e.g. Machakos cost, Kitui borehole, solar pump)..." aria-label="Search blog posts" />
         <div class="chip-row" aria-label="Filter by county">
-          <button class="chip active" data-filter="all">All</button>
-          <button class="chip" data-filter="machakos">Machakos</button>
-          <button class="chip" data-filter="makueni">Makueni</button>
-          <button class="chip" data-filter="kitui">Kitui</button>
-          <button class="chip" data-filter="embu">Embu</button>
-          <button class="chip" data-filter="meru">Meru</button>
-          <button class="chip" data-filter="cost">Costs</button>
+          <button class="chip active" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="machakos">Machakos</button>
+          <button class="chip" type="button" data-filter="makueni">Makueni</button>
+          <button class="chip" type="button" data-filter="kitui">Kitui</button>
+          <button class="chip" type="button" data-filter="embu">Embu</button>
+          <button class="chip" type="button" data-filter="meru">Meru</button>
+          <button class="chip" type="button" data-filter="cost">Costs</button>
         </div>
       </div>
 
       <section class="grid" id="blogGrid">
 
-        <!-- 1 -->
         <article class="card" data-tags="machakos drilling">
           <div class="thumb" role="img" aria-label="Borehole drilling in Machakos"></div>
           <div class="body">
@@ -258,7 +111,6 @@
           </div>
         </article>
 
-        <!-- 2 -->
         <article class="card" data-tags="makueni drilling">
           <div class="thumb" role="img" aria-label="Borehole drilling in Makueni"></div>
           <div class="body">
@@ -269,7 +121,6 @@
           </div>
         </article>
 
-        <!-- 3 -->
         <article class="card" data-tags="kitui drilling">
           <div class="thumb" role="img" aria-label="Borehole drilling in Kitui"></div>
           <div class="body">
@@ -280,7 +131,6 @@
           </div>
         </article>
 
-        <!-- 4 -->
         <article class="card" data-tags="embu drilling">
           <div class="thumb" role="img" aria-label="Borehole drilling in Embu"></div>
           <div class="body">
@@ -291,7 +141,6 @@
           </div>
         </article>
 
-        <!-- 5 -->
         <article class="card" data-tags="meru drilling">
           <div class="thumb" role="img" aria-label="Borehole drilling in Meru"></div>
           <div class="body">
@@ -302,7 +151,6 @@
           </div>
         </article>
 
-        <!-- 6 -->
         <article class="card" data-tags="tharaka-nithi drilling">
           <div class="thumb" role="img" aria-label="Borehole drilling in Tharaka Nithi"></div>
           <div class="body">
@@ -313,18 +161,16 @@
           </div>
         </article>
 
-        <!-- 7 -->
         <article class="card" data-tags="isiolo drilling">
           <div class="thumb" role="img" aria-label="Borehole drilling in Isiolo"></div>
           <div class="body">
             <div class="meta"><span class="tag">Isiolo</span><span>6–9 min read</span></div>
             <h2><a href="blog/borehole-drilling-isiolo.html">Borehole Drilling in Isiolo: Solar Boreholes for Remote Areas</a></h2>
-            <p>How solar pumping improves water reliability in remote sites — sizing, storage and common mistakes.</p>
+          <p>How solar pumping improves water reliability in remote sites — sizing, storage and common mistakes.</p>
             <a class="read" href="blog/borehole-drilling-isiolo.html">Read Article →</a>
           </div>
         </article>
 
-        <!-- 8 -->
         <article class="card" data-tags="garissa drilling">
           <div class="thumb" role="img" aria-label="Borehole drilling in Garissa"></div>
           <div class="body">
@@ -335,7 +181,6 @@
           </div>
         </article>
 
-        <!-- 9 -->
         <article class="card" data-tags="marsabit drilling">
           <div class="thumb" role="img" aria-label="Borehole drilling in Marsabit"></div>
           <div class="body">
@@ -346,7 +191,6 @@
           </div>
         </article>
 
-        <!-- 10 -->
         <article class="card" data-tags="cost drilling">
           <div class="thumb" role="img" aria-label="Borehole drilling cost in Kenya"></div>
           <div class="body">
@@ -370,7 +214,7 @@
     </div>
   </main>
 
-  <!-- Footer (reuse yours) -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom">
@@ -384,7 +228,7 @@
     // year
     document.getElementById("currentYear").textContent = new Date().getFullYear();
 
-    // simple search + filter
+    // search + filter
     const search = document.getElementById("blogSearch");
     const chips = document.querySelectorAll(".chip");
     const cards = document.querySelectorAll("#blogGrid .card");

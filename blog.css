@@ -1,0 +1,287 @@
+ :root{
+      --gradient-primary: linear-gradient(135deg,#006bd6 0%,#1a8cff 100%);
+      --gradient-secondary: linear-gradient(135deg,#dbae26 0%,#f7c948 100%);
+      --ink: #0b1220;
+      --glass: rgba(255,255,255,.06);
+      --glass2: rgba(255,255,255,.10);
+      --line: rgba(255,255,255,.12);
+      --muted: rgba(255,255,255,.78);
+    }
+
+    /* keep page typography consistent */
+    body{ font-family:"Jost",sans-serif; }
+
+    /* ===== Blog Hero ===== */
+    .blog-hero{
+      position:relative;
+      min-height: 52vh;
+      display:flex;
+      align-items:flex-end;
+      color:#fff;
+
+      /* IMPORTANT: header is fixed in your globals, so we give breathing room */
+      padding: 120px 0 54px;
+
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.932), rgba(9, 9, 9, 0.808)),
+        url("image - 2026-01-04T072020.069.webp");
+      background-size:cover;
+      background-position:center;
+      border-bottom: 1px solid rgba(255,255,255,.10);
+    }
+
+    .blog-hero .badge{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:8px 14px; border-radius:999px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.14);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      letter-spacing:2px;
+      text-transform:uppercase;
+      font-size:.78rem;
+      color: rgba(255,255,255,.88);
+    }
+
+    .blog-hero h1{
+      font-family:"EB Garamond",serif;
+      font-size: clamp(2.2rem, 4.5vw, 3.7rem);
+      line-height:1.05;
+      margin: 14px 0 12px;
+      max-width: 22ch;
+      text-wrap: balance;
+      color: #007aff;
+    }
+
+    .blog-hero p{
+      max-width: 72ch;
+      color: rgba(255,255,255,.86);
+      margin:0;
+      line-height: 1.7;
+    }
+
+    /* ===== Blog Wrap ===== */
+    .blog-wrap{
+      padding: 70px 0;
+      background: var(--ink);
+      color:#fff;
+    }
+
+    .blog-toolbar{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom: 24px;
+    }
+
+    .search{
+      flex:1;
+      min-width:260px;
+      background: var(--glass);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:12px 14px;
+      color:#fff;
+      outline:none;
+      transition: box-shadow .2s ease, border-color .2s ease, background .2s ease;
+    }
+
+    .search::placeholder{ color: rgba(255,255,255,.55); }
+
+    .search:focus{
+      border-color: rgba(26,140,255,.55);
+      box-shadow: 0 0 0 4px rgba(26,140,255,.18);
+      background: rgba(255,255,255,.075);
+    }
+
+    .chip-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+    }
+
+    .chip{
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color:#fff;
+      padding:10px 12px;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:.92rem;
+      line-height: 1;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease, opacity .18s ease;
+      user-select:none;
+    }
+
+    .chip:hover{ transform: translateY(-1px); background: rgba(255,255,255,.085); }
+
+    .chip.active{
+      background: var(--gradient-primary);
+      border-color: transparent;
+    }
+
+    /* ===== Cards Grid ===== */
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+      gap: 22px;
+    }
+
+    .card{
+      background: rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius: 18px;
+      overflow:hidden;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      will-change: transform;
+    }
+
+    .card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 20px 45px rgba(0,0,0,.35);
+      border-color: rgba(255,255,255,.16);
+    }
+
+    .card .thumb{
+      height: 186px;
+      background:
+        linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.45)),
+        url("image - 2026-01-04T072020.069.webp");
+      background-size:cover;
+      background-position:center;
+    }
+
+    .card .body{ padding: 18px 18px 20px; }
+
+    .meta{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      font-size:.88rem;
+      color: rgba(255,255,255,.75);
+    }
+
+    .tag{
+      border: 1px solid rgba(255,255,255,.14);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: .82rem;
+      background: rgba(255,255,255,.04);
+    }
+
+    .card h2{
+      font-size: 1.18rem;
+      margin: 10px 0 10px;
+      line-height:1.25;
+      font-weight: 600;
+    }
+
+    .card h2 a{
+      color:#007aff ;
+      text-decoration: none;
+    }
+
+    .card h2 a:hover{
+      color: rgba(247,201,72,.95);
+    }
+
+    .card p{
+      margin:0 0 14px;
+      color: rgba(255,255,255,.82);
+      line-height:1.65;
+    }
+
+    .read{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 14px;
+      border-radius:999px;
+      border: 2px solid rgba(255,255,255,.16);
+      color:#fff;
+      font-weight: 600;
+      transition: background .2s ease, border-color .2s ease, transform .2s ease, color .2s ease;
+    }
+
+    .read:hover{
+      border-color: transparent;
+      background: var(--gradient-secondary);
+      color:#0b1220;
+      transform: translateY(-1px);
+    }
+
+    /* ===== CTA Strip ===== */
+    .cta-strip{
+      margin-top: 40px;
+      padding: 26px;
+      border-radius: 18px;
+      background: var(--gradient-primary);
+      display:flex;
+      gap: 18px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+    }
+
+    .cta-strip h3{
+      margin:0;
+      font-size:1.35rem;
+      font-family:"EB Garamond",serif;
+      letter-spacing: .2px;
+    }
+
+    .cta-strip p{
+      margin:6px 0 0;
+      opacity:.92;
+      max-width: 70ch;
+      line-height: 1.6;
+    }
+
+    .cta-strip a{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding: 12px 16px;
+      background: rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius: 14px;
+      color:#fff;
+      font-weight:600;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+
+    .cta-strip a:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.18);
+      border-color: rgba(255,255,255,.26);
+    }
+
+    /* ===== Header logo quick fix (your globals use .logo-img) ===== */
+    .logo-image{
+      height: clamp(40px, 4.2vw, 64px);
+      width: auto;
+      object-fit: contain;
+      display:block;
+      filter: drop-shadow(0 10px 24px rgba(0,0,0,0.45));
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px){
+      .blog-hero{
+        padding: 112px 0 44px;
+        min-height: 48vh;
+      }
+
+      .blog-hero h1{
+        max-width: 100%;
+      }
+
+      .cta-strip{
+        text-align:left;
+      }
+    }

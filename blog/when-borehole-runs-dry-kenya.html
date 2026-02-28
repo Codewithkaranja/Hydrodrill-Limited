@@ -1,29 +1,434 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>When a Borehole Runs Dry in Kenya: Causes & Solutions | Hydrodrill</title>
-<meta name="description" content="Borehole running dry? Learn common causes (pump sizing, drawdown, seasonal changes), quick checks, and solutions like rehabilitation and system redesign."/>
-<meta name="robots" content="index,follow"/><link rel="canonical" href="https://hydrodrillsolutions.com/blog/when-borehole-runs-dry-kenya.html"/>
-<link rel="icon" type="image/webp" href="../HydroDrill-Solutions-favicon.webp"/><link rel="stylesheet" href="../style.css"/></head><body>
-<header class="header"><div class="container"><nav class="navbar">
-<a href="../" class="logo"><img class="logo-image" src="../HydroDrill-Solutions-favicon.webp" alt="Hydrodrill"></a>
-<div class="nav-menu" id="navMenu"><ul class="nav-list">
-<li class="nav-item"><a class="nav-link" href="../">Home</a></li>
-<li class="nav-item"><a class="nav-link active" href="../blog.html">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="../services.html#rehabilitation">Rehabilitation</a></li>
-</ul></div><button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
-</nav></div></header>
-<main class="container" style="padding:110px 0 60px; max-width:980px;">
-<p><a href="../blog.html">← Back</a></p>
-<h1 style="font-family:'EB Garamond',serif;">When a Borehole Runs Dry: Causes & What To Do</h1>
-<ul>
-<li>Pump exceeds sustainable yield</li>
-<li>Seasonal drawdown in dry periods</li>
-<li>Clogged screens / reduced inflow</li>
-<li>Electrical faults or pump wear</li>
-</ul>
-<p><strong>Fix:</strong> inspect → test → consider rehabilitation or resizing pump + storage.</p>
-<p><a href="../contact.html">Request emergency support</a></p>
-</main>
-<footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; <span id="currentYear"></span> Hydrodrill</p></div></div></footer>
-<script>document.getElementById("currentYear").textContent=new Date().getFullYear();</script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>When a Borehole Runs Dry in Kenya: Causes, Checks & Fixes | Hydrodrill</title>
+  <meta name="description" content="Borehole running dry in Kenya? Learn the most common causes (yield vs pump sizing, drawdown, clogging, faults), quick checks, and proven solutions like rehabilitation, redesign, and storage." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://hydrodrillsolutions.com/blog/when-borehole-runs-dry-kenya.html" />
+
+  <!-- Fav + CSS -->
+  <link rel="icon" type="image/webp" href="../HydroDrill-Solutions-favicon.webp" />
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Social (OG/Twitter) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Hydrodrill Solutions" />
+  <meta property="og:title" content="When a Borehole Runs Dry in Kenya: Causes, Checks & Fixes" />
+  <meta property="og:description" content="Quick checks, the real causes, and what to do next—rehabilitation, pump resizing, storage, and system redesign." />
+  <meta property="og:url" content="https://hydrodrillsolutions.com/blog/when-borehole-runs-dry-kenya.html" />
+  <meta property="og:image" content="https://hydrodrillsolutions.com/assets/og/borehole-runs-dry-kenya.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="../blogpost.css">
+
+  <!-- Structured Data: Article + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "When a Borehole Runs Dry in Kenya: Causes, Checks & Fixes",
+    "description": "Borehole running dry in Kenya? Learn common causes, quick checks, and solutions including rehabilitation, pump resizing, storage and system redesign.",
+    "author": { "@type": "Organization", "name": "Hydrodrill Solutions" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hydrodrill Solutions",
+      "logo": { "@type": "ImageObject", "url": "https://hydrodrillsolutions.com/assets/brand/hydrodrill-logo.webp" }
+    },
+    "mainEntityOfPage": "https://hydrodrillsolutions.com/blog/when-borehole-runs-dry-kenya.html",
+    "image": "https://hydrodrillsolutions.com/assets/og/borehole-runs-dry-kenya.webp",
+    "datePublished": "2026-02-26",
+    "dateModified": "2026-02-26"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Is a “dry” borehole always a water shortage problem?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Not always. A borehole can appear dry due to pump faults, electrical issues, clogged screens, or an oversized pump causing rapid drawdown even when the aquifer still recovers."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"What is the fastest safe check I can do before calling a technician?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Confirm power supply and control settings, listen for pump running, check for tripped breakers, inspect for leaks at the tank/pipework, and note any changes in yield timing (e.g., water returns after rest)."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"When do I need borehole rehabilitation?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Rehabilitation is often needed when screens clog, inflow reduces, sand increases, or yield steadily declines. A proper assessment (camera inspection + test pumping) guides the best rehab method."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Mobile overlay + panel -->
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+  <div class="nav-panel" id="navPanel" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div class="panel-head">
+      <div class="panel-title">
+        <img src="../HydroDrill-Solutions-favicon.webp" alt="Hydrodrill" style="width:36px;height:36px;border-radius:12px;border:1px solid rgba(26,26,46,.10);background:#fff;">
+        <span>Menu</span>
+      </div>
+      <button class="panel-close" id="navClose" aria-label="Close menu"></button>
+    </div>
+    <div class="panel-body">
+      <ul class="panel-links">
+        <li><a href="../">Home <span>→</span></a></li>
+        <li><a href="../blog.html">Blog <span>→</span></a></li>
+        <li><a href="../services.html#rehabilitation">Rehabilitation <span>→</span></a></li>
+        <li><a href="../contact.html">Contact <span>→</span></a></li>
+      </ul>
+      <div class="panel-cta">
+        <p><strong>Need urgent borehole support?</strong> Reach out and we’ll guide the safest next step.</p>
+        <a href="../contact.html">Request support</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../" class="logo" aria-label="Hydrodrill Home">
+          <img class="logo-image" src="../HydroDrill-Solutions-favicon.webp" alt="Hydrodrill Solutions logo">
+        </a>
+
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="../blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="../services.html#rehabilitation">Rehabilitation</a></li>
+            <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="navPanel" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <div class="page-container">
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <p style="margin:0 0 10px; color:var(--muted);">
+          <a href="../">Home</a> <span aria-hidden="true">›</span>
+          <a href="../blog.html">Blog</a> <span aria-hidden="true">›</span>
+          <span>When a Borehole Runs Dry</span>
+        </p>
+      </nav>
+
+      <!-- Hero -->
+      <section class="hero" aria-label="Article hero">
+        <div class="hero-inner">
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Borehole Troubleshooting • Kenya</span>
+          </div>
+
+          <h1>When a Borehole Runs Dry in Kenya: Causes, Quick Checks & Proven Fixes</h1>
+
+          <p class="lead">
+            If your borehole suddenly “runs dry,” it doesn’t always mean the aquifer is finished. Often it’s a sizing issue,
+            a clogging problem, or a fault in the pump or controls. Use this guide to identify the likely cause, do safe first checks,
+            and choose the right next step—from rehabilitation to system redesign.
+          </p>
+
+          <div class="meta" aria-label="Article meta">
+            <span>🗓️ <time datetime="2026-02-26">Feb 26, 2026</time></span>
+            <span>⏱️ 6–8 min read</span>
+            <span>✅ Practical checklist included</span>
+          </div>
+
+          <div class="badges" aria-label="Key topics">
+            <span class="badge">Pump sizing</span>
+            <span class="badge">Drawdown</span>
+            <span class="badge">Clogged screens</span>
+            <span class="badge gold">Rehabilitation</span>
+            <span class="badge">Storage planning</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content grid -->
+      <section class="grid" aria-label="Article content">
+        <!-- Main article -->
+        <article class="card" itemscope itemtype="https://schema.org/Article">
+          <div class="pad">
+            <div class="card toc" aria-label="Table of contents" style="background:var(--surface); border-radius:14px; border:1px solid var(--line); padding:14px;">
+              <strong>On this page</strong>
+              <ol>
+                <li><a href="#signs">Signs your borehole is truly underperforming</a></li>
+                <li><a href="#quick-checks">Quick checks you can do safely</a></li>
+                <li><a href="#causes">Common causes in Kenya</a></li>
+                <li><a href="#solutions">Solutions: from quick fixes to long-term</a></li>
+                <li><a href="#prevention">How to prevent repeat failures</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ol>
+            </div>
+
+            <div class="section" id="signs">
+              <h2>1) Signs your borehole is truly underperforming</h2>
+              <p>
+                A borehole “running dry” can show up in a few different ways. Identifying the pattern helps you avoid
+                expensive guesswork and protects your pump from damage.
+              </p>
+              <ul class="checklist">
+                <li><span class="icon">✓</span><div><strong>Water stops after a few minutes</strong><br><span style="color:var(--muted)">Often points to oversize pumping vs sustainable yield (rapid drawdown).</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Lower flow than usual</strong><br><span style="color:var(--muted)">Can indicate clogging, wear, or changed groundwater levels.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Cloudy/sandy water</strong><br><span style="color:var(--muted)">May signal screen damage, poor development, or aquifer disturbance.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Pump runs but no water reaches tank</strong><br><span style="color:var(--muted)">Could be pipe leaks, failed NRV/check valve, airlock, or electrical/control issues.</span></div></li>
+              </ul>
+
+              <div class="callout">
+                <strong>Important:</strong> Avoid repeatedly running the pump “to test it.”
+                Short cycling and dry running can overheat components and shorten pump life.
+              </div>
+            </div>
+
+            <div class="section" id="quick-checks">
+              <h2>2) Quick checks you can do safely (before calling a technician)</h2>
+              <p>
+                These checks are non-invasive and help you communicate clearly when you request support. If you’re unsure
+                about electrical work, don’t open panels—just observe and report.
+              </p>
+
+              <h3>A. Power & controls</h3>
+              <ul class="checklist">
+                <li><span class="icon">1</span><div><strong>Confirm power is stable</strong><br><span style="color:var(--muted)">Any recent outages, generator changeovers, or voltage drops?</span></div></li>
+                <li><span class="icon">2</span><div><strong>Check breakers / protection trips</strong><br><span style="color:var(--muted)">If it trips repeatedly, stop and call support.</span></div></li>
+                <li><span class="icon">3</span><div><strong>Listen for pump behavior</strong><br><span style="color:var(--muted)">Running normally, humming, short cycling, or silent?</span></div></li>
+              </ul>
+
+              <h3>B. Plumbing & storage</h3>
+              <ul class="checklist">
+                <li><span class="icon">4</span><div><strong>Inspect visible leaks</strong><br><span style="color:var(--muted)">Check pipes, valves, tank fittings, and overflow lines.</span></div></li>
+                <li><span class="icon">5</span><div><strong>Check tank level trends</strong><br><span style="color:var(--muted)">Does it refill overnight after resting? That’s a key clue for yield vs pumping rate.</span></div></li>
+              </ul>
+
+              <div class="callout" style="border-left-color: var(--warning-color); background: rgba(255,193,7,.14);">
+                <strong>Stop and call emergency support</strong> if you smell burning, see smoke, hear grinding noises, or breakers keep tripping.
+              </div>
+            </div>
+
+            <div class="section" id="causes">
+              <h2>3) Common causes of a borehole running dry in Kenya</h2>
+
+              <h3>Cause #1: Pumping rate exceeds sustainable yield</h3>
+              <p>
+                The borehole may recharge, but not fast enough for the current pump. You’ll see water for a short time,
+                then it stops—especially during peak use.
+              </p>
+
+              <h3>Cause #2: Seasonal drawdown (dry season effects)</h3>
+              <p>
+                During dry periods, groundwater levels can drop. A system that worked fine in rainy months may struggle
+                when recharge reduces and demand rises.
+              </p>
+
+              <h3>Cause #3: Clogged screens / reduced inflow</h3>
+              <p>
+                Over time, screens and surrounding formations can clog with fine sediments or mineral deposits, reducing
+                inflow and lowering yield even if the aquifer is still present.
+              </p>
+
+              <h3>Cause #4: Electrical faults, control issues, or pump wear</h3>
+              <p>
+                A failing capacitor, contactor issues, low voltage, worn impellers, or damaged non-return valves can all
+                produce “no water” symptoms that look like a dry borehole.
+              </p>
+            </div>
+
+            <div class="section" id="solutions">
+              <h2>4) Solutions: what to do next (the right order)</h2>
+
+              <div class="callout">
+                <strong>Best practice sequence:</strong> inspect → measure/test → apply the least invasive fix → confirm performance → plan long-term improvements.
+              </div>
+
+              <h3>Step 1: Professional assessment (fast + cost-saving)</h3>
+              <p>
+                A proper check typically includes inspection of pump, controls, and pipework, plus performance checks.
+                Where needed, a camera inspection and test pumping help confirm whether the issue is yield, blockage, or equipment.
+              </p>
+
+              <h3>Step 2: Borehole rehabilitation (when inflow is restricted)</h3>
+              <p>
+                If screens are clogged or inflow has reduced, rehabilitation can restore yield. The method depends on the
+                borehole condition—so inspection first is key.
+              </p>
+
+              <h3>Step 3: Pump resizing + storage planning (when demand is the problem)</h3>
+              <p>
+                If the pump is drawing down the borehole too quickly, resizing the pump (or adjusting controls) plus adding
+                adequate storage can stabilize supply without stressing the aquifer.
+              </p>
+
+              <h3>Step 4: System redesign (for recurring failures)</h3>
+              <p>
+                If dry events keep happening, your best ROI often comes from redesign—proper pump selection, smart controls,
+                storage buffers, and usage scheduling aligned to borehole recovery.
+              </p>
+
+              <div class="divider"></div>
+
+              <div class="cta" aria-label="Call to action">
+                <h3>Need urgent borehole support?</h3>
+                <p>
+                  Tell us your location, borehole depth (if known), and what happens when you switch on the pump (runs, trips, or short cycles).
+                  We’ll advise the next safe step.
+                </p>
+                <div class="btn-row">
+                  <a class="btn primary" href="../contact.html">Request emergency support</a>
+                  <a class="btn" href="../services.html#rehabilitation">See rehabilitation services</a>
+                  <a class="btn" href="../blog.html">Back to blog</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="section" id="prevention">
+              <h2>5) How to prevent repeat “dry borehole” incidents</h2>
+              <ul class="checklist">
+                <li><span class="icon">✓</span><div><strong>Size pumps to sustainable yield</strong><br><span style="color:var(--muted)">Avoid “bigger pump = better” thinking—match pumping rate to recovery.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Use storage as a buffer</strong><br><span style="color:var(--muted)">Let the borehole refill while your tank supplies peak demand.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Schedule heavy use</strong><br><span style="color:var(--muted)">Spread demand across the day and allow rest periods if needed.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Do periodic performance checks</strong><br><span style="color:var(--muted)">Track flow rate changes early—before failure becomes expensive.</span></div></li>
+              </ul>
+            </div>
+
+            <div class="section faq" id="faq">
+              <h2>6) FAQ</h2>
+
+              <details>
+                <summary>Is a “dry” borehole always a water shortage problem?</summary>
+                <p>
+                  Not always. Equipment faults, clogged screens, or an oversized pump can make a borehole appear dry.
+                  If water returns after resting, that’s often a yield vs pumping-rate clue.
+                </p>
+              </details>
+
+              <details>
+                <summary>What’s the biggest mistake people make when a borehole stops producing?</summary>
+                <p>
+                  Repeatedly restarting the pump to “force” water out. That can cause overheating, shorten pump life,
+                  and make troubleshooting harder.
+                </p>
+              </details>
+
+              <details>
+                <summary>How do I explain the issue clearly when requesting support?</summary>
+                <p>
+                  Share: (1) how long water flows before stopping, (2) whether breakers trip, (3) any recent power outages,
+                  (4) changes in sand/cloudiness, and (5) whether it refills after resting overnight.
+                </p>
+              </details>
+            </div>
+
+            <div class="author" aria-label="Author box">
+              <div class="avatar" aria-hidden="true">HD</div>
+              <div>
+                <strong>Hydrodrill Solutions</strong>
+                <small>Field support • Borehole rehabilitation • Pump sizing • System optimization</small>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="sticky" aria-label="Sidebar">
+          <div class="card">
+            <div class="pad">
+              <strong>Fast troubleshooting summary</strong>
+              <p style="margin:10px 0 0; color:var(--muted); line-height:1.7;">
+                If water stops quickly, think <em>drawdown/pump sizing</em>.
+                If pump runs but no water reaches tank, think <em>fault/leak/valve</em>.
+                If flow reduced over months, think <em>clogging</em>.
+              </p>
+              <div class="divider"></div>
+              <strong>Related pages</strong>
+              <ul style="margin:10px 0 0; padding-left:18px; color:var(--muted); line-height:1.8;">
+                <li><a href="../services.html#rehabilitation" style="color:inherit;">Borehole rehabilitation</a></li>
+                <li><a href="../contact.html" style="color:inherit;">Request inspection / support</a></li>
+                <li><a href="../blog.html" style="color:inherit;">More guides</a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Hydrodrill Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+    // Mobile nav (overlay + panel + ESC + close on link click)
+    (function () {
+      const body = document.body;
+      const toggle = document.getElementById("navToggle");
+      const overlay = document.getElementById("navOverlay");
+      const closeBtn = document.getElementById("navClose");
+      const panel = document.getElementById("navPanel");
+
+      if (!toggle || !overlay || !closeBtn || !panel) return;
+
+      function openNav(){
+        body.classList.add("nav-open");
+        toggle.setAttribute("aria-expanded","true");
+      }
+      function closeNav(){
+        body.classList.remove("nav-open");
+        toggle.setAttribute("aria-expanded","false");
+      }
+
+      toggle.addEventListener("click", () => {
+        const isOpen = body.classList.contains("nav-open");
+        isOpen ? closeNav() : openNav();
+      });
+
+      overlay.addEventListener("click", closeNav);
+      closeBtn.addEventListener("click", closeNav);
+
+      // Close when clicking any link inside the mobile panel
+      panel.addEventListener("click", (e) => {
+        const a = e.target.closest("a");
+        if (a) closeNav();
+      });
+
+      // ESC close
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeNav();
+      });
+    })();
+  </script>
+</body>
+</html>

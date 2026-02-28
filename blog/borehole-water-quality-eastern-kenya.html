@@ -1,28 +1,625 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Borehole Water Quality in Eastern Kenya (Salinity, Iron & Treatment) | Hydrodrill</title>
-<meta name="description" content="Borehole water quality in Eastern Kenya: common issues like salinity and iron, why testing matters, and how filtration and treatment is planned."/>
-<meta name="robots" content="index,follow"/><link rel="canonical" href="https://hydrodrillsolutions.com/blog/borehole-water-quality-eastern-kenya.html"/>
-<link rel="icon" type="image/webp" href="../HydroDrill-Solutions-favicon.webp"/><link rel="stylesheet" href="../style.css"/></head><body>
-<header class="header"><div class="container"><nav class="navbar">
-<a href="../" class="logo"><img class="logo-image" src="../HydroDrill-Solutions-favicon.webp" alt="Hydrodrill"></a>
-<div class="nav-menu" id="navMenu"><ul class="nav-list">
-<li class="nav-item"><a class="nav-link" href="../">Home</a></li>
-<li class="nav-item"><a class="nav-link active" href="../blog.html">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="../services.html">Services</a></li>
-</ul></div><button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
-</nav></div></header>
-<main class="container" style="padding:110px 0 60px; max-width:980px;">
-<p><a href="../blog.html">← Back</a></p>
-<h1 style="font-family:'EB Garamond',serif;">Borehole Water Quality in Eastern Kenya</h1>
-<ul>
-<li>Why water quality testing is essential</li>
-<li>Common issues: iron, salinity, hardness</li>
-<li>When filtration or treatment is required</li>
-<li>How storage and distribution affects quality</li>
-</ul>
-<p><a href="../contact.html">Request water testing advice</a></p>
-</main>
-<footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; <span id="currentYear"></span> Hydrodrill</p></div></div></footer>
-<script>document.getElementById("currentYear").textContent=new Date().getFullYear();</script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Borehole Water Quality in Eastern Kenya: Salinity, Hardness, Iron & Testing Checklist | Hydrodrill</title>
+  <meta name="description" content="Borehole water quality in Eastern Kenya explained: common issues (salinity, hardness, iron, fluoride, nitrates, bacteria), how to test, what results mean for homes, farms and institutions, and practical treatment options. Includes step-by-step checklist and mini decision tool." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://hydrodrillsolutions.com/blog/borehole-water-quality-eastern-kenya.html" />
+
+  <!-- Fav + CSS -->
+  <link rel="icon" type="image/webp" href="../HydroDrill-Solutions-favicon.webp" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../blogpost.css" />
+
+  <!-- Social (OG/Twitter) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Hydrodrill Solutions" />
+  <meta property="og:title" content="Borehole Water Quality in Eastern Kenya: Salinity, Hardness, Iron & Testing Checklist" />
+  <meta property="og:description" content="Before you connect the taps, confirm quality. Learn what to test, what problems are common in Eastern Kenya, and what to do if results are salty, hard, or high in iron/fluoride." />
+  <meta property="og:url" content="https://hydrodrillsolutions.com/blog/borehole-water-quality-eastern-kenya.html" />
+  <meta property="og:image" content="https://hydrodrillsolutions.com/assets/og/borehole-water-quality-eastern-kenya.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Borehole Water Quality in Eastern Kenya: Salinity, Hardness, Iron & Testing Checklist",
+    "description":"A practical guide to borehole water quality in Eastern Kenya: common issues (salinity, hardness, iron, fluoride, nitrates, bacteria), what to test, how to interpret results, and treatment planning for homes, farms and institutions.",
+    "author":{"@type":"Organization","name":"Hydrodrill Solutions"},
+    "publisher":{
+      "@type":"Organization",
+      "name":"Hydrodrill Solutions",
+      "logo":{"@type":"ImageObject","url":"https://hydrodrillsolutions.com/assets/brand/hydrodrill-logo.webp"}
+    },
+    "mainEntityOfPage":"https://hydrodrillsolutions.com/blog/borehole-water-quality-eastern-kenya.html",
+    "image":"https://hydrodrillsolutions.com/assets/og/borehole-water-quality-eastern-kenya.webp",
+    "datePublished":"2026-02-26",
+    "dateModified":"2026-02-26"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What are the most common borehole water quality issues in Eastern Kenya?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Common concerns include salinity (high TDS/EC), hardness (scaling), iron/manganese (staining and clogging), fluoride in some areas, nitrates from surface contamination, and bacteria if headworks and storage hygiene are poor."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"When should I test borehole water after drilling?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"After drilling and development, once the water runs clear and the borehole has stabilized. Testing is especially important before using the water for drinking/cooking, irrigation, or supplying schools and institutions."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Is salty borehole water usable for farming?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"It depends on the level of salinity, the crop type and the soil. Testing helps determine if the water is suitable, whether drip irrigation is needed, whether blending is possible, or whether treatment is required."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Can filtration fix all water quality problems?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. Filters help with particles and some iron issues, but dissolved salts (salinity/TDS) and fluoride typically require specialized treatment like reverse osmosis or other targeted methods."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Mobile overlay + panel (styled by blogpost.css) -->
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <div class="nav-panel" id="navPanel" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div class="panel-head">
+      <div class="panel-title">
+        <img src="../HydroDrill-Solutions-favicon.webp" alt="Hydrodrill" style="width:36px;height:36px;border-radius:12px;">
+        <span>Menu</span>
+      </div>
+      <button class="panel-close" id="navClose" aria-label="Close menu"></button>
+    </div>
+    <div class="panel-body">
+      <ul class="panel-links">
+        <li><a href="../">Home <span>→</span></a></li>
+        <li><a href="../blog.html">Blog <span>→</span></a></li>
+        <li><a href="../services.html#rehabilitation">Rehabilitation <span>→</span></a></li>
+        <li><a href="../contact.html">Contact <span>→</span></a></li>
+      </ul>
+      <div class="panel-cta">
+        <p><strong>Got test results?</strong> Share EC/TDS + hardness + iron + fluoride numbers.</p>
+        <a href="../contact.html">Request interpretation</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../" class="logo" aria-label="Hydrodrill Home">
+          <img class="logo-image" src="../HydroDrill-Solutions-favicon.webp" alt="Hydrodrill Solutions logo">
+        </a>
+
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="../blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="../services.html#rehabilitation">Rehabilitation</a></li>
+            <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="navPanel" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <div class="page-container">
+
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <p class="crumbs">
+          <a href="../">Home</a> <span aria-hidden="true">›</span>
+          <a href="../blog.html">Blog</a> <span aria-hidden="true">›</span>
+          <span>Borehole Water Quality (Eastern Kenya)</span>
+        </p>
+      </nav>
+
+      <!-- Hero -->
+      <section class="hero" aria-label="Article hero">
+        <div class="hero-inner">
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Water Quality • Eastern Kenya</span>
+          </div>
+
+          <h1>Borehole Water Quality in Eastern Kenya: What to Test, What Problems to Expect & What to Do Next</h1>
+
+          <p class="lead">
+            In Eastern Kenya, “water is available” isn’t the full story.
+            Quality can affect <strong>health</strong>, <strong>plumbing</strong>, <strong>pumps</strong>, and even <strong>crop yields</strong>.
+            This guide shows what to test, how to read the most important results, and how to plan treatment without overspending.
+          </p>
+
+          <div class="meta" aria-label="Article meta">
+            <span>🗓️ <time datetime="2026-02-26">Feb 26, 2026</time></span>
+            <span>⏱️ 10–14 min read</span>
+            <span>✅ Testing checklist</span>
+          </div>
+
+          <div class="badges" aria-label="Key topics">
+            <span class="badge">Salinity (EC/TDS)</span>
+            <span class="badge gold">Hardness</span>
+            <span class="badge">Iron/Manganese</span>
+            <span class="badge">Fluoride</span>
+            <span class="badge">Nitrates</span>
+            <span class="badge">Bacteria</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content grid -->
+      <section class="grid" aria-label="Article content">
+
+        <!-- Main -->
+        <article class="card" itemscope itemtype="https://schema.org/Article">
+          <div class="pad">
+
+            <!-- TOC -->
+            <div class="card toc" aria-label="Table of contents">
+              <strong>On this page</strong>
+              <ol>
+                <li><a href="#why">Why quality matters (homes, farms, institutions)</a></li>
+                <li><a href="#when">When to test after drilling</a></li>
+                <li><a href="#core">Core tests to request (must-have list)</a></li>
+                <li><a href="#salinity">Salinity (EC/TDS): what it means</a></li>
+                <li><a href="#hardness">Hardness: scaling, heaters & pipes</a></li>
+                <li><a href="#iron">Iron & manganese: staining and clogging</a></li>
+                <li><a href="#fluoride">Fluoride: why it matters</a></li>
+                <li><a href="#nitrates">Nitrates & bacteria: contamination risks</a></li>
+                <li><a href="#treatment">Treatment options (what works for what)</a></li>
+                <li><a href="#system">System design to protect quality (tanks, pipes, hygiene)</a></li>
+                <li><a href="#mistakes">Common mistakes (and cheap fixes)</a></li>
+                <li><a href="#mini-tool">Mini decision tool</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ol>
+            </div>
+
+            <div class="section" id="why">
+              <h2>1) Why quality matters (homes, farms, institutions)</h2>
+              <p>
+                Water quality affects different users in different ways.
+                Homes care about taste, safety and plumbing damage.
+                Farms care about crops, soil and irrigation clogging.
+                Institutions care about hygiene, safety and continuity for many users.
+              </p>
+
+              <div class="callout">
+                <strong>Reality:</strong> Many “bad boreholes” are actually good water sources with a treatment or hygiene gap (dirty tanks, wrong filters, or poor sealing).
+              </div>
+            </div>
+
+            <div class="section" id="when">
+              <h2>2) When to test after drilling</h2>
+              <p>
+                Test after drilling and development, once water runs clear and the borehole stabilizes.
+                If you test too early, results can be misleading because drilling disturbance can temporarily change turbidity and some readings.
+                For drinking/cooking or institutions, don’t connect final supply without quality confirmation.
+              </p>
+
+              <ul class="checklist">
+                <li><span class="icon">✓</span><div><strong>After development</strong><br><span class="muted">Let the borehole run clean before sampling.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Before final plumbing</strong><br><span class="muted">Results can affect filter choice, pipe material, and system layout.</span></div></li>
+              </ul>
+            </div>
+
+            <div class="section" id="core">
+              <h2>3) Core tests to request (must-have list)</h2>
+              <p>
+                Start with a practical core panel that answers the big questions fast.
+                You can always add more tests later if the core panel shows a concern.
+              </p>
+
+              <ul class="checklist">
+                <li><span class="icon">✓</span><div><strong>EC / TDS</strong><br><span class="muted">Quick indicator of salinity (dissolved salts).</span></div></li>
+                <li><span class="icon">✓</span><div><strong>pH</strong><br><span class="muted">Affects corrosion and treatment decisions.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Total hardness</strong><br><span class="muted">Scaling risk for heaters, pipes and sprinklers.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Iron / Manganese</strong><br><span class="muted">Staining, taste, clogging and filter load.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Fluoride</strong><br><span class="muted">Important in some regions; check before drinking use.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Nitrates</strong><br><span class="muted">Possible contamination indicator (agriculture/septic).</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Bacteriological test</strong><br><span class="muted">Basic safety indicator (especially for drinking/institutions).</span></div></li>
+              </ul>
+
+              <div class="callout" style="border-left-color: var(--warning-color);">
+                <strong>Tip:</strong> If the water is only for irrigation, focus on EC/TDS + hardness + iron (plus anything crop-sensitive).
+              </div>
+            </div>
+
+            <div class="section" id="salinity">
+              <h2>4) Salinity (EC/TDS): what it means</h2>
+              <p>
+                Salinity is the “salts dissolved in water” story.
+                High salinity can make water taste salty, corrode fittings, and reduce crop yields over time depending on crop tolerance and soil conditions.
+                EC (electrical conductivity) and TDS (total dissolved solids) are common screening metrics.
+              </p>
+
+              <div class="callout">
+                <strong>Farm perspective:</strong> If salinity is elevated, drip irrigation + smart scheduling often helps, and some crops tolerate salinity better than others.
+              </div>
+            </div>
+
+            <div class="section" id="hardness">
+              <h2>5) Hardness: scaling, heaters & pipes</h2>
+              <p>
+                Hard water causes scaling—white deposits in kettles, heaters, pipes and sprinklers.
+                On farms, hardness can clog nozzles and reduce irrigation uniformity.
+                In buildings, hardness increases maintenance costs and reduces equipment life.
+              </p>
+
+              <ul class="checklist">
+                <li><span class="icon">✓</span><div><strong>Signs</strong><br><span class="muted">White crust, reduced flow, noisy heaters, frequent shower-head clogging.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>What helps</strong><br><span class="muted">Softening or targeted treatment; also plan easier cleaning points in the system.</span></div></li>
+              </ul>
+            </div>
+
+            <div class="section" id="iron">
+              <h2>6) Iron & manganese: staining and clogging</h2>
+              <p>
+                Iron and manganese can stain tanks and fixtures and may create a metallic taste.
+                They also load filters quickly and can clog irrigation lines when oxidation causes particles to form.
+                If you see reddish/brown staining, iron is a likely suspect.
+              </p>
+
+              <div class="callout">
+                <strong>Practical note:</strong> Some iron issues are managed with aeration/oxidation + filtration, plus good tank hygiene.
+              </div>
+            </div>
+
+            <div class="section" id="fluoride">
+              <h2>7) Fluoride: why it matters</h2>
+              <p>
+                Fluoride is important to check if you plan drinking use.
+                Some regions can have elevated fluoride levels naturally due to geology.
+                If fluoride is high, you plan appropriate drinking-water treatment or alternative supply for drinking/cooking.
+              </p>
+
+              <div class="callout" style="border-left-color: var(--warning-color);">
+                <strong>Rule:</strong> If the borehole is for drinking, don’t assume “clear water = safe water.” Always test.
+              </div>
+            </div>
+
+            <div class="section" id="nitrates">
+              <h2>8) Nitrates & bacteria: contamination risks</h2>
+              <p>
+                Nitrates can increase due to surface contamination sources like septic systems, animal areas, or fertilizer use.
+                Bacteria risk increases with poor headworks sealing, bad drainage around the borehole, or dirty storage tanks.
+                These are often system/hygiene problems, not “the aquifer is bad.”
+              </p>
+
+              <ul class="checklist">
+                <li><span class="icon">✓</span><div><strong>Protect the borehole head</strong><br><span class="muted">Drainage away from the borehole reduces contamination risk.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Tank cleaning schedule</strong><br><span class="muted">Dirty tanks can undo all your treatment efforts.</span></div></li>
+              </ul>
+            </div>
+
+            <div class="section" id="treatment">
+              <h2>9) Treatment options (what works for what)</h2>
+              <p>
+                Treatment should match the problem. Don’t buy “one filter to solve everything.”
+                A good provider will map treatment to test results and intended use (drinking vs irrigation).
+              </p>
+
+              <ul class="checklist">
+                <li><span class="icon">✓</span><div><strong>Particles/turbidity</strong><br><span class="muted">Sediment filtration, proper development, and good screens/gravel pack.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Iron/manganese</strong><br><span class="muted">Oxidation/aeration + filtration; ensure maintenance access.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Hardness</strong><br><span class="muted">Softening solutions where needed; protect heaters and sprinklers.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Salinity (high TDS/EC)</strong><br><span class="muted">Specialized treatment (e.g., RO) or blending/usage adjustment where possible.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Bacteria</strong><br><span class="muted">Disinfection strategy + sealing + tank hygiene.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Fluoride</strong><br><span class="muted">Targeted drinking-water treatment; plan drinking points separately if needed.</span></div></li>
+              </ul>
+
+              <div class="callout">
+                <strong>Cost saver:</strong> For many sites, you only treat the water that must be drinking-quality, not every litre used for toilets and irrigation.
+              </div>
+            </div>
+
+            <div class="section" id="system">
+              <h2>10) System design to protect quality (tanks, pipes, hygiene)</h2>
+              <p>
+                Even great water can become unsafe or unpleasant if the system is poorly designed.
+                Storage tanks need cleaning access, covers, and a schedule.
+                Pipes should avoid dead-ends where water stagnates, and headworks should drain away from the borehole.
+              </p>
+
+              <ul class="checklist">
+                <li><span class="icon">✓</span><div><strong>Covered tanks</strong><br><span class="muted">Prevents contamination and algae issues.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Accessible filters</strong><br><span class="muted">If filters are hard to service, they won’t be serviced.</span></div></li>
+                <li><span class="icon">✓</span><div><strong>Drainage + sealing</strong><br><span class="muted">Protect the borehole head from runoff and animal areas.</span></div></li>
+              </ul>
+
+              <div class="divider"></div>
+
+              <div class="cta" aria-label="Call to action">
+                <h3>Want help choosing tests and treatment?</h3>
+                <p>
+                  Share your location in Eastern Kenya, intended use (home/farm/institution), and any signs (salty taste, staining, scaling).
+                  We’ll recommend a practical test panel and the simplest treatment plan.
+                </p>
+                <div class="btn-row">
+                  <a class="btn primary" href="../contact.html">Request interpretation</a>
+                  <a class="btn" href="../blog.html">Back to blog</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="section" id="mistakes">
+              <h2>11) Common mistakes (and cheap fixes)</h2>
+              <p>
+                Quality problems often persist because the wrong solution was applied.
+                Fixing the system basics can solve a surprising number of “water quality” complaints.
+              </p>
+
+              <ul class="checklist">
+                <li><span class="icon">✕</span><div><strong>Buying random filters without test results</strong><br><span class="muted">You spend money and still don’t solve the real issue.</span></div></li>
+                <li><span class="icon">✕</span><div><strong>Dirty tanks</strong><br><span class="muted">Tank hygiene is a top cause of taste/odor/bacteria complaints.</span></div></li>
+                <li><span class="icon">✕</span><div><strong>Poor headworks drainage</strong><br><span class="muted">Surface runoff and animal activity can contaminate the area.</span></div></li>
+                <li><span class="icon">✕</span><div><strong>No maintenance access</strong><br><span class="muted">Filters and treatment fail if they’re impossible to service regularly.</span></div></li>
+              </ul>
+
+              <div class="callout">
+                <strong>Best practice:</strong> Test → interpret → treat → maintain. Skipping “maintain” brings problems back.
+              </div>
+            </div>
+
+            <div class="section" id="mini-tool">
+              <h2>12) Mini decision tool (quick guidance)</h2>
+
+              <div class="card" style="background: var(--surface); border-radius: 14px;">
+                <div class="pad">
+                  <p style="margin-top:0; color: var(--muted);">
+                    Select your main concern to get a sensible testing and treatment direction.
+                  </p>
+
+                  <div style="display:grid; gap:10px; max-width: 760px;">
+                    <label style="font-weight:900;">Main use</label>
+                    <select id="use" style="padding:12px;border-radius:12px;border:1px solid var(--line);background:#fff;font-weight:800;">
+                      <option value="home" selected>Home (drinking + domestic)</option>
+                      <option value="farm">Farm / irrigation</option>
+                      <option value="institution">School / institution</option>
+                      <option value="mixed">Mixed use</option>
+                    </select>
+
+                    <label style="font-weight:900;">Main concern</label>
+                    <select id="issue" style="padding:12px;border-radius:12px;border:1px solid var(--line);background:#fff;font-weight:800;">
+                      <option value="unknown" selected>Not sure (want a basic panel)</option>
+                      <option value="salty">Salty taste / high EC/TDS</option>
+                      <option value="scale">Scaling / hard water</option>
+                      <option value="stain">Reddish/brown staining (iron)</option>
+                      <option value="health">Health safety (drinking/institution)</option>
+                    </select>
+
+                    <button id="toolBtn" class="btn primary" type="button" style="width:max-content;">
+                      Get recommendation
+                    </button>
+
+                    <div id="toolOut" class="callout" style="display:none; margin:0;">
+                      <strong id="toolTitle">Recommendation:</strong>
+                      <div id="toolBody" class="muted" style="margin-top:6px; line-height:1.7;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section faq" id="faq">
+              <h2>13) FAQ</h2>
+
+              <details>
+                <summary>Can I use borehole water for drinking without testing?</summary>
+                <p>
+                  It’s risky. Clear water can still have fluoride, nitrates, bacteria, or dissolved salts. Always test before drinking use.
+                </p>
+              </details>
+
+              <details>
+                <summary>Is iron water dangerous?</summary>
+                <p>
+                  Iron is often more of an aesthetic/maintenance issue (staining, taste, clogging), but you still test and treat appropriately—especially for institutions.
+                </p>
+              </details>
+
+              <details>
+                <summary>Do farms need the same tests as homes?</summary>
+                <p>
+                  Farms usually prioritize EC/TDS (salinity), hardness, iron, and anything crop-sensitive. Homes and institutions add stronger focus on safety testing.
+                </p>
+              </details>
+            </div>
+
+            <div class="author" aria-label="Author box">
+              <div class="avatar" aria-hidden="true">HD</div>
+              <div>
+                <strong>Hydrodrill Solutions</strong>
+                <small>Water testing guidance • Borehole system design • Treatment planning • Eastern Kenya support</small>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="sticky" aria-label="Sidebar">
+          <div class="card">
+            <div class="pad">
+              <strong>Fast summary</strong>
+              <p class="muted" style="margin:10px 0 0; line-height:1.7;">
+                In Eastern Kenya, key checks are EC/TDS (salinity), hardness, iron, fluoride, nitrates and bacteria—especially before drinking use.
+                Treatment must match test results, and tank hygiene is a major hidden factor.
+              </p>
+
+              <div class="divider"></div>
+
+              <strong>Related pages</strong>
+              <ul style="margin:10px 0 0; padding-left:18px; color:var(--muted); line-height:1.8;">
+                <li><a href="../contact.html" style="color:inherit;">Request interpretation</a></li>
+                <li><a href="../blog.html" style="color:inherit;">More guides</a></li>
+                <li><a href="../services.html#rehabilitation" style="color:inherit;">Rehabilitation</a></li>
+              </ul>
+
+              <div class="divider"></div>
+
+              <strong>Quick checklist</strong>
+              <p class="muted" style="margin:10px 0 0; line-height:1.7;">
+                Develop → test pump → sample properly → core tests → interpret → treat → maintain (tanks + filters).
+              </p>
+            </div>
+          </div>
+        </aside>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Hydrodrill Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    const yearEl = document.getElementById("currentYear");
+    if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+    // Mobile nav
+    (function () {
+      const body = document.body;
+      const toggle = document.getElementById("navToggle");
+      const overlay = document.getElementById("navOverlay");
+      const closeBtn = document.getElementById("navClose");
+      const panel = document.getElementById("navPanel");
+
+      if (!toggle || !overlay || !closeBtn || !panel) return;
+
+      function openNav(){
+        body.classList.add("nav-open");
+        toggle.setAttribute("aria-expanded","true");
+      }
+      function closeNav(){
+        body.classList.remove("nav-open");
+        toggle.setAttribute("aria-expanded","false");
+      }
+
+      toggle.addEventListener("click", () => {
+        const isOpen = body.classList.contains("nav-open");
+        isOpen ? closeNav() : openNav();
+      });
+
+      overlay.addEventListener("click", closeNav);
+      closeBtn.addEventListener("click", closeNav);
+
+      panel.addEventListener("click", (e) => {
+        const a = e.target.closest("a");
+        if (a) closeNav();
+      });
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeNav();
+      });
+    })();
+
+    // Mini decision tool
+    (function(){
+      const use = document.getElementById("use");
+      const issue = document.getElementById("issue");
+      const btn = document.getElementById("toolBtn");
+
+      const out = document.getElementById("toolOut");
+      const title = document.getElementById("toolTitle");
+      const body = document.getElementById("toolBody");
+
+      if (!use || !issue || !btn || !out || !title || !body) return;
+
+      function recommend(){
+        const u = use.value;
+        const i = issue.value;
+
+        let head = "Start with a core water test panel";
+        let tests = [
+          "EC/TDS, pH, total hardness, iron/manganese, fluoride, nitrates, and a basic bacteriological test (for drinking/institutions)."
+        ];
+        let actions = [
+          "Sample after development when water is clear and stable.",
+          "Design treatment based on results (don’t buy random filters).",
+          "Keep tanks covered and cleaned on schedule."
+        ];
+
+        if (u === "farm") {
+          head = "Farm: prioritize salinity + irrigation protection";
+          tests = [
+            "EC/TDS (salinity), pH, hardness, iron/manganese (clogging risk), plus anything crop-sensitive if advised."
+          ];
+          actions.unshift("If salinity is elevated, consider drip irrigation, zoning, and smart scheduling to reduce stress on crops and soil.");
+        } else if (u === "institution") {
+          head = "Institution: prioritize safety + consistency";
+          tests.unshift("For institutions, include bacteriological testing and plan a hygiene/maintenance routine.");
+          actions.unshift("Use storage-first supply and ensure tanks and distribution are hygienic.");
+        } else if (u === "mixed") {
+          head = "Mixed use: separate drinking points from bulk use";
+          actions.unshift("Treat drinking-quality water at point-of-use if full-volume treatment is expensive.");
+        }
+
+        if (i === "salty") {
+          actions.push("If EC/TDS is high, discuss blending or specialized treatment options; filtration alone won’t remove dissolved salts.");
+        } else if (i === "scale") {
+          actions.push("If hardness is high, plan softening or protect heaters/sprinklers with maintenance-friendly design.");
+        } else if (i === "stain") {
+          actions.push("If iron is high, plan oxidation/aeration plus filtration and ensure easy servicing.");
+        } else if (i === "health") {
+          actions.push("If any safety markers are flagged, don’t use for drinking until treatment and retesting are done.");
+        } else {
+          actions.push("If unsure, start with the core panel, then expand tests only if needed.");
+        }
+
+        out.style.display = "block";
+        title.textContent = `Recommendation: ${head}`;
+        body.innerHTML = `
+          <div style="margin-bottom:10px;"><strong>Tests to request:</strong>
+            <ul style="margin:6px 0 0; padding-left:18px;">${tests.map(x => `<li>${x}</li>`).join("")}</ul>
+          </div>
+          <div><strong>Next actions:</strong>
+            <ul style="margin:6px 0 0; padding-left:18px;">${actions.map(x => `<li>${x}</li>`).join("")}</ul>
+          </div>
+        `;
+      }
+
+      btn.addEventListener("click", recommend);
+    })();
+  </script>
+</body>
+</html>

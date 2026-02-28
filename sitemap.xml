@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Core pages -->
   <url>
     <loc>https://hydrodrillsolutions.com/</loc>
     <lastmod>2026-02-02</lastmod>
@@ -34,6 +35,162 @@
   <url>
     <loc>https://hydrodrillsolutions.com/privacy.html</loc>
     <lastmod>2026-02-02</lastmod>
+  </url>
+
+  <!-- Blog posts -->
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/best-borehole-drilling-company-machakos.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-cost-per-meter-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-depth-eastern-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-drilling-cost-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-drilling-embu.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-drilling-garissa.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-drilling-isiolo.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-drilling-kitui.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-drilling-machakos.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-drilling-makueni.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-drilling-marsabit.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-drilling-meru.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-drilling-tharaka-nithi.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-lifespan-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-maintenance-checklist-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-mistakes-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-permits-wra-nema-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-vs-water-bowsers-cost-comparison.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-water-quality-eastern-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/borehole-yield-explained-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/boreholes-for-farms-eastern-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/boreholes-for-schools-institutions-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/complete-borehole-system-survey-to-tap.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/how-to-know-land-has-water-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/hydrogeological-survey-cost-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/machakos-vs-makueni-borehole-water-comparison.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/signs-you-need-a-borehole-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/solar-vs-electric-borehole-pump-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/tank-towers-height-vs-pressure-guide.html</loc>
+    <lastmod>2026-02-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/template.html</loc>
+    <lastmod>2026-02-23</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hydrodrillsolutions.com/blog/when-borehole-runs-dry-kenya.html</loc>
+    <lastmod>2026-02-26</lastmod>
   </url>
 
 </urlset>

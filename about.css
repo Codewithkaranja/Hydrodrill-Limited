@@ -1,432 +1,57 @@
 /* =========================================================
-   ABOUT PAGE CSS (Clean + No Conflicts)
-   - Removes duplicate @media blocks
-   - Fixes background URL escaping
-   - Fixes mobile nav conflict (NO display:none with off-canvas)
+   ABOUT PAGE CSS — PREMIUM (Clean + No Conflicts)
+   - Single mobile block (no duplicates)
+   - Premium hero + timeline + team + values + certs
+   - Mobile nav: off-canvas, JS-safe (no display:none)
 ========================================================= */
 
-/* Logo images */
-.logo-image {
-  max-height: 150px;
+/* =========================
+   Logo + WhatsApp
+========================= */
+.logo-image{
+  height: clamp(46px, 4.6vw, 96px);
   width: auto;
-  transition: var(--transition);
+  object-fit: contain;
+  display: block;
+  transition: height .25s ease, transform .25s ease, opacity .25s ease;
+  filter: drop-shadow(0 10px 22px rgba(0,0,0,.35));
 }
 
-.header.sticky .logo-image {
-  max-height: 150px;
+.header.sticky .logo-image{
+  height: clamp(44px, 4.2vw, 86px);
 }
 
-.footer-logo-image {
+.footer-logo-image{
   max-height: 150px;
   width: auto;
   margin-bottom: 20px;
 }
 
-/* WhatsApp floating button position */
-.whatsapp-float {
-  left: 30px;
+.whatsapp-float{
+  right: 30px;
   bottom: 30px;
-  right: auto;
+  left: auto;
 }
 
-/* About page: Company history background */
-.company-history {
-  padding: 60px 0;
+/* =========================
+   Company History (Premium backdrop)
+========================= */
+.company-history{
+  padding: 70px 0;
   background:
-    linear-gradient(rgba(21, 17, 17, 0.95), rgba(35, 32, 32, 0.95)),
+    radial-gradient(circle at 10% 10%, rgba(0,107,214,.14), transparent 55%),
+    radial-gradient(circle at 90% 20%, rgba(219,174,38,.12), transparent 55%),
+    linear-gradient(rgba(21, 17, 17, 0.94), rgba(35, 32, 32, 0.94)),
     url("HydroDrill-Solutions-favicon.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-/* Timeline */
-.timeline {
-  position: relative;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px 0;
-}
-
-.timeline-content h4 {
-  color: var(--primary-color);
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 100%;
-  background-color: var(--primary-color);
-  border-radius: 2px;
-}
-
-.timeline-item {
-  margin-bottom: 50px;
-  position: relative;
-  width: 50%;
-  padding: 20px;
-}
-
-.timeline-item:nth-child(odd) {
-  left: 0;
-  padding-right: 50px;
-  text-align: right;
-}
-
-.timeline-item:nth-child(even) {
-  left: 50%;
-  padding-left: 50px;
-}
-
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  top: 30px;
-}
-
-.timeline-item:nth-child(odd)::before {
-  right: -10px;
-}
-
-.timeline-item:nth-child(even)::before {
-  left: -10px;
-}
-
-.timeline-year {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--primary-color);
-  margin-bottom: 10px;
-}
-
-.timeline-content {
-  background-color: #fff;
-  padding: 25px;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
-}
-
-/* ===============================
-   PREMIUM TEAM SECTION
-   =============================== */
-
-.team-grid {
-  display: grid;
- grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
- gap: 40px;
-  margin-top: 60px;
-}
-
-/* Card */
-.team-card {
-  position: relative;
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #f9fafb 100%
-  );
-  border-radius: 18px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.08),
-    0 1px 0 rgba(255, 255, 255, 0.6) inset;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-/* Subtle premium accent line */
-.team-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 18px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  pointer-events: none;
-}
-
-/* Hover lift */
-.team-card:hover {
-  transform: translateY(-12px);
-  box-shadow:
-    0 25px 55px rgba(0, 0, 0, 0.15),
-    0 1px 0 rgba(255, 255, 255, 0.6) inset;
-}
-
-/* Image */
-.team-image {
-  height: 280px;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Dark gradient overlay for luxury depth */
-.team-image::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.35) 100%
-  );
-}
-
-.team-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
-
-.team-card:hover .team-image img {
-  transform: scale(1.08);
-}
-
-/* Info */
-.team-info {
-  padding: 30px 25px 35px;
-  background: #ffffff;
-}
-
-/* Name */
-.team-name {
-  font-size: 1.35rem;
-  font-weight: 600;
-  margin-bottom: 6px;
-  color: #0f172a; /* Deep executive tone */
-}
-
-/* Position */
-.team-position {
-  font-size: 0.95rem;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  color: var(--primary-color);
-  font-weight: 500;
-  margin-bottom: 0;
-}
-
-/* Optional subtle divider */
-.team-info::before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 3px;
-  margin: 0 auto 15px;
-  border-radius: 10px;
-  background: linear-gradient(
-    90deg,
-    var(--primary-color),
-    rgba(0, 0, 0, 0)
-  );
-}
-
-
-/* Mission */
-.mission-icon {
-  font-size: 3rem;
-  text-align: center;
-  color: var(--primary-color);
-  margin-bottom: 20px;
-}
-
-.mission-card h3 {
-  text-align: center;
-  color: var(--primary-color);
-}
-
-.mission-card p {
-  color: rgba(255, 255, 255, 0.85);
-}
-
-/* Values */
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
-}
-
-.value-card {
-  text-align: center;
-  padding: 40px 30px;
-  background-color: #000;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
-  transition: var(--transition);
-}
-
-.value-card:hover {
-  transform: translateY(-10px);
-  border-top: 4px solid var(--secondary-color);
-}
-
-.value-icon {
-  width: 80px;
-  height: 80px;
-  background-color: rgba(0, 107, 214, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 25px;
-  font-size: 2rem;
-  color: var(--primary-color);
-}
-
-.value-card h3 {
-  color: var(--primary-color);
-}
-
-.value-card p {
-  color: rgba(255, 255, 255, 0.83);
-}
-
-/* Certifications */
 /* =========================
-   Certifications (Premium)
+   About Hero
 ========================= */
-.certifications{
-  position: relative;
-  padding: 90px 0;
-  background:
-    radial-gradient(900px 500px at 10% 10%, rgba(26, 95, 122, 0.10), transparent 60%),
-    radial-gradient(900px 500px at 90% 20%, rgba(42, 157, 143, 0.10), transparent 60%),
-    linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
-  overflow: hidden;
-}
-
-.certifications .section-header{
-  max-width: 760px;
-  margin: 0 auto 40px;
-}
-
-.certifications .section-title{
-  font-size: clamp(1.8rem, 2.8vw, 2.35rem);
-  letter-spacing: -0.02em;
-}
-
-.certifications .section-subtitle{
-  max-width: 620px;
-  margin: 12px auto 0;
-  color: var(--text-light);
-  line-height: 1.7;
-}
-
-/* Grid */
-.cert-grid{
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 22px;
-  margin-top: 50px;
-}
-
-.cert-card{
-  grid-column: span 4; /* 3 per row on desktop */
-  position: relative;
-  background: black;
-  border: 1px solid rgba(15, 23, 42, 0.08);
-  border-radius: 18px;
-  padding: 28px 26px;
-  text-align: left;
-  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.06);
-  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-  overflow: hidden;
-  color: aliceblue;
-}
-
-/* subtle top accent */
-.cert-card::before{
-  content: "";
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-  opacity: .9;
-}
-
-/* soft glow on hover */
-.cert-card::after{
-  content: "";
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  right: -120px;
-  top: -120px;
-  background: radial-gradient(circle, rgba(42, 157, 143, .18), transparent 60%);
-  opacity: 0;
-  transition: opacity .25s ease;
-}
-
-.cert-card:hover{
-  transform: translateY(-8px);
-  box-shadow: 0 18px 45px rgba(2, 6, 23, 0.10);
-  border-color: rgba(26, 95, 122, 0.22);
-}
-
-.cert-card:hover::after{
-  opacity: 1;
-}
-
-.cert-icon{
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
-  display: grid;
-  place-items: center;
-  margin-bottom: 16px;
-  background: linear-gradient(135deg, rgba(26, 95, 122, 0.12), rgba(42, 157, 143, 0.12));
-  border: 1px solid rgba(26, 95, 122, 0.18);
-}
-
-.cert-icon i{
-  font-size: 1.5rem;
-  color: var(--primary-color);
-}
-
-.cert-card h4{
-  margin: 0 0 10px;
-  font-size: 1.05rem;
-  color: var(--primary-color);
-  letter-spacing: -0.01em;
-}
-
-.cert-card p{
-  margin: 0;
-  color: var(--text-light);
-  line-height: 1.7;
-  font-size: 0.95rem;
-}
-
-/* Responsive */
-@media (max-width: 992px){
-  .cert-card{ grid-column: span 6; } /* 2 per row */
-}
-
-@media (max-width: 600px){
-  .certifications{ padding: 70px 0; }
-  .cert-grid{ gap: 16px; margin-top: 32px; }
-  .cert-card{ grid-column: span 12; padding: 22px 18px; }
-  .cert-icon{ width: 52px; height: 52px; border-radius: 13px; }
-}
-
-
-/* Light section override */
-.bg-light {
-  background-color: #000;
-}
-
-/* =====================================
-   ABOUT HERO – Simple 60vh Header
-===================================== */
-.about-hero {
+.about-hero{
   position: relative;
   height: 60vh;
   min-height: 420px;
@@ -435,250 +60,521 @@
   align-items: center;
   color: #fff;
   overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,.10);
 }
 
-.about-hero-bg {
+.about-hero-bg{
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    linear-gradient(rgba(0,0,0,.66), rgba(0,0,0,.66)),
     url("image - 2026-01-04T072020.069.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
+  transform: scale(1.02);
 }
 
-.about-hero-content {
+.about-hero-bg::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(0,107,214,.20), transparent 55%),
+    radial-gradient(circle at 85% 15%, rgba(219,174,38,.16), transparent 55%);
+  pointer-events:none;
+}
+
+.about-hero-content{
   position: relative;
   z-index: 1;
-  max-width: 720px;
+  max-width: 760px;
 }
 
-.about-hero-content h1 {
+.about-hero-content h1{
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   margin-bottom: 14px;
-  color: var(--primary-color);
+  color: #007aff;
+  letter-spacing: -0.6px;
 }
 
-.about-hero-content p {
+.about-hero-content p{
   font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255,255,255,.85);
   max-width: 60ch;
+  line-height: 1.7;
 }
 
-.about-hero-actions {
+.about-hero-actions{
   margin-top: 22px;
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
 }
 
-/* =====================================
-   MOBILE (Timeline + WhatsApp + Hero + Nav)
-===================================== */
-@media (max-width: 768px) {
-  /* Timeline to single column */
-  .timeline::before {
-    left: 20px;
-  }
-
-  .timeline-item {
-    width: 100%;
-    left: 0;
-    padding: 20px 20px 20px 60px;
-    text-align: left;
-  }
-
-  .timeline-item::before {
-    left: 10px;
-    right: auto;
-  }
-  
-.timeline-item:nth-child(odd)::before {
-  right: -10px;
+/* =========================
+   Timeline (Desktop)
+========================= */
+.timeline{
+  position: relative;
+  max-width: 900px;
+  margin: 40px auto 10px;
+  padding: 20px 0;
 }
 
-.timeline-item:nth-child(even)::before {
-  left: -10px;
+.timeline-content h4{
+  color: var(--primary-color);
 }
 
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,107,214,.9), rgba(219,174,38,.65));
+  border-radius: 999px;
+  opacity: .95;
+}
+
+.timeline-item{
+  margin-bottom: 50px;
+  position: relative;
+  width: 50%;
+  padding: 20px;
+}
+
+.timeline-item:nth-child(odd){
+  left: 0;
+  padding-right: 50px;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even){
+  left: 50%;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.timeline-item::before{
+  content:"";
+  position:absolute;
+  width: 18px;
+  height: 18px;
+  top: 30px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: 50%;
+  box-shadow: 0 12px 26px rgba(0,0,0,.22);
+}
+
+.timeline-item:nth-child(odd)::before{ right: -9px; }
+.timeline-item:nth-child(even)::before{ left: -9px; }
+
+.timeline-year{
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  letter-spacing: -0.2px;
+}
+
+.timeline-content{
+  background: rgba(255,255,255,.92);
+  padding: 26px;
+  border-radius: 16px;
+  border: 1px solid rgba(15,23,42,.08);
+  box-shadow: 0 18px 55px rgba(2, 8, 23, .12);
+}
+
+/* ===============================
+   PREMIUM TEAM SECTION
+=============================== */
+.team-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.team-card{
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+  border-radius: 18px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow:
+    0 14px 45px rgba(2, 8, 23, 0.10),
+    0 1px 0 rgba(255, 255, 255, 0.65) inset;
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+  border: 1px solid rgba(15,23,42,.08);
+}
+
+.team-card:hover{
+  transform: translateY(-10px);
+  box-shadow:
+    0 26px 70px rgba(2, 8, 23, 0.16),
+    0 1px 0 rgba(255, 255, 255, 0.70) inset;
+  border-color: rgba(0,107,214,.18);
+}
+
+.team-image{
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-image::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,.38) 100%);
+}
+
+.team-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s ease;
+}
+
+.team-card:hover .team-image img{ transform: scale(1.08); }
+
+.team-info{
+  padding: 30px 25px 35px;
+  background: #ffffff;
+}
+
+.team-info::before{
+  content:"";
+  display:block;
+  width: 44px;
+  height: 3px;
+  margin: 0 auto 15px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--primary-color), rgba(0,0,0,0));
+}
+
+.team-name{
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.team-position{
+  font-size: .95rem;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* =========================
+   Mission / Values
+========================= */
+.mission-icon{
+  font-size: 3rem;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.mission-card h3{
+  text-align:center;
+  color: var(--primary-color);
+}
+
+.mission-card p{ color: rgba(255,255,255,.85); }
+
+.values-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.value-card{
+  text-align:center;
+  padding: 40px 30px;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(0,107,214,.12), transparent 55%),
+    rgba(0,0,0,.92);
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: 0 18px 55px rgba(0,0,0,.35);
+  transition: transform .25s ease, border-color .25s ease;
+}
+
+.value-card:hover{
+  transform: translateY(-10px);
+  border-color: rgba(219,174,38,.40);
+}
+
+.value-icon{
+  width: 80px;
+  height: 80px;
+  background-color: rgba(0,107,214,.14);
+  border: 1px solid rgba(0,107,214,.22);
+  border-radius: 22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin: 0 auto 25px;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.value-card h3{ color: var(--primary-color); }
+.value-card p{ color: rgba(255,255,255,.83); }
+
+/* =========================
+   Certifications (Premium)
+========================= */
+.certifications{
+  position: relative;
+  padding: 90px 0;
+  background:
+    radial-gradient(900px 500px at 10% 10%, rgba(0,107,214,.08), transparent 60%),
+    radial-gradient(900px 500px at 90% 20%, rgba(219,174,38,.08), transparent 60%),
+    linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  overflow: hidden;
+}
+
+.cert-grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 22px;
+  margin-top: 50px;
+}
+
+.cert-card{
+  grid-column: span 4;
+  position: relative;
+  background: rgba(0,0,0,.92);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 18px;
+  padding: 28px 26px;
+  text-align: left;
+  box-shadow: 0 14px 45px rgba(2, 6, 23, 0.10);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  overflow: hidden;
+  color: #e6edf7;
+}
+
+.cert-card::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  opacity: .92;
+}
+
+.cert-card::after{
+  content:"";
+  position:absolute;
+  width: 240px;
+  height: 240px;
+  right: -130px;
+  top: -130px;
+  background: radial-gradient(circle, rgba(0,107,214,.20), transparent 60%);
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+
+.cert-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 22px 60px rgba(2, 6, 23, 0.16);
+  border-color: rgba(0,107,214,.22);
+}
+
+.cert-card:hover::after{ opacity: 1; }
+
+.cert-icon{
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display:grid;
+  place-items:center;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, rgba(0,107,214,.14), rgba(219,174,38,.12));
+  border: 1px solid rgba(255,255,255,.10);
+}
+
+.cert-icon i{
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.cert-card h4{
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  color: rgba(255,255,255,.95);
+  letter-spacing: -0.01em;
+}
+
+.cert-card p{
+  margin: 0;
+  color: rgba(230,237,247,.82);
+  line-height: 1.7;
+  font-size: .95rem;
+}
+
+/* Light section override used in your site */
+.bg-light{ background-color: #000; }
+
+/* =========================
+   Header sticky helper
+========================= */
+.header.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 14px 45px rgba(0,0,0,.18);
+}
+
+/* =========================
+   RESPONSIVE (Single clean block)
+========================= */
+@media (max-width: 992px){
+  .cert-card{ grid-column: span 6; }
+}
+
+@media (max-width: 768px){
+
+  /* header on mobile: not tiny + visible toggle */
+  .header{
+    padding: 14px 0 !important;
+  }
+  .header.sticky{
+    padding: 12px 0 !important;
+  }
+  .logo-image{
+    height: clamp(48px, 10vw, 66px);
+  }
 
   /* WhatsApp position */
-  .whatsapp-float {
+  .whatsapp-float{
     left: 20px;
+    right: auto;
     bottom: 20px;
   }
 
   /* About hero centering */
-  .about-hero {
+  .about-hero{
     height: 62svh;
     min-height: 480px;
     align-items: center;
     padding: 32px 0;
   }
 
-  .about-hero-content {
+  .about-hero-content{
     text-align: center;
     margin: 0 auto;
   }
 
-  .about-hero-actions {
+  .about-hero-actions{
     flex-direction: column;
     align-items: center;
   }
 
-  .about-hero-actions .btn {
+  .about-hero-actions .btn{
     width: 100%;
     max-width: 320px;
     text-align: center;
   }
 
-  /* MOBILE NAV (off-canvas) */
-  .nav-toggle {
-    display: flex;
+  /* Timeline — ONE vertical line (no odd/even conflicts) */
+  .timeline::before{
+    left: 20px;
+    transform: none;
+  }
+
+  .timeline-item{
+    width: 100%;
+    left: 0;
+    padding: 18px 18px 18px 60px;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even){
+    left: 0;
+    padding-right: 18px;
+    padding-left: 60px;
+    text-align: left;
+  }
+
+  .timeline-item::before,
+  .timeline-item:nth-child(odd)::before,
+  .timeline-item:nth-child(even)::before{
+    left: 11px;
+    right: auto;
+  }
+
+  /* Mobile Nav — off-canvas (JS toggles .active) */
+  .nav-toggle{
+    display:flex;
     flex-direction: column;
     gap: 6px;
     cursor: pointer;
     z-index: 1001;
   }
 
-  .nav-toggle span {
+  /* sticks MUST be white for visibility */
+  .nav-toggle span{
     width: 26px;
     height: 3px;
-    background: #111;
-    border-radius: 3px;
-    transition: all 0.3s ease;
+    background: rgba(255,255,255,.95);
+    border-radius: 999px;
+    transition: all .25s ease;
   }
 
-  .nav-menu {
+  .nav-menu{
     position: fixed;
     top: 0;
     right: -100%;
     width: 100%;
     height: 100vh;
-    background: #fff;
-    padding: 100px 24px 24px;
-    transition: right 0.35s ease;
+    background: rgba(0,0,0,.96);
+    padding: 110px 24px 24px;
+    transition: right .35s ease;
     z-index: 1000;
+
+    /* IMPORTANT: no display:none so slide works */
+    display: block;
   }
 
-  .nav-menu.active {
-    right: 0;
-  }
+  .nav-menu.active{ right: 0; }
 
-  /* Hamburger → X */
-  .nav-toggle.active span:nth-child(1) {
+  .nav-toggle.active span:nth-child(1){
     transform: translateY(9px) rotate(45deg);
   }
-
-  .nav-toggle.active span:nth-child(2) {
+  .nav-toggle.active span:nth-child(2){
     opacity: 0;
   }
-
-  .nav-toggle.active span:nth-child(3) {
+  .nav-toggle.active span:nth-child(3){
     transform: translateY(-9px) rotate(-45deg);
   }
 
-  .nav-list {
-    display: flex;
+  .nav-list{
+    display:flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
     margin: 0;
     padding: 0;
   }
 }
-/* =====================================
-   MOBILE – Timeline in ONE vertical line
-===================================== */
-@media (max-width: 768px) {
 
-  /* Move the main vertical line to the left */
-  .timeline::before {
-    left: 20px;
-    transform: none;
-  }
-
-  /* All items full width */
-  .timeline-item {
-    width: 100%;
-    left: 0;
-    padding: 20px 20px 20px 60px;
-    text-align: left;
-  }
-
-  /* All dots aligned on the same line */
-  .timeline-item::before {
-    left: 10px;
-    right: auto;
-  }
-
-  /* ❌ Disable odd/even positioning completely */
-  .timeline-item:nth-child(odd),
-  .timeline-item:nth-child(even) {
-    left: 0;
-    padding-right: 20px;
-    padding-left: 60px;
-    text-align: left;
-  }
-
-  .timeline-item:nth-child(odd)::before,
-  .timeline-item:nth-child(even)::before {
-    left: 10px;
-    right: auto;
-  }
-}
-
-/* Optional: Animation for menu toggle */
-.nav-toggle.active .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.nav-toggle.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.nav-toggle.active .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -6px);
-}
-
-.header.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-/* ===========================
-   NAV DISPLAY: Desktop vs Mobile
-=========================== */
-
-
-
-/* Mobile: hide menu until active, show toggle */
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: flex;
-  }
-
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100vh;
-    background: #fff;
-    padding: 100px 24px 24px;
-    transition: right 0.35s ease;
-    z-index: 1000;
-
-    /* 👇 Important: keep it visible (not display:none) so slide works */
-    display: block;
-  }
-
-  .nav-menu.active {
-    right: 0;
-  }
+@media (max-width: 600px){
+  .certifications{ padding: 70px 0; }
+  .cert-grid{ gap: 16px; margin-top: 32px; }
+  .cert-card{ grid-column: span 12; padding: 22px 18px; }
+  .cert-icon{ width: 52px; height: 52px; border-radius: 13px; }
 }

@@ -118,9 +118,9 @@
         
         /* WhatsApp button positioning */
         .whatsapp-float {
-            left: 30px;
+            right: 30px;
             bottom: 30px;
-            right: auto;
+            left: auto;
         }
         
         /* Products Navigation */
@@ -799,7 +799,7 @@
             }
             
             .whatsapp-float {
-                left: 20px;
+                right: 20px;
                 bottom: 20px;
             }
         }

@@ -4,38 +4,7 @@
    Clean, scalable, brand-safe
 ========================================================= */
 
-.logo {
-  display: flex;
-  align-items: center;
-}
 
-/* Clickable logo wrapper */
-.logo-link {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-}
-
-/* Logo image */
-.logo-img {
-  height: 150px;          /* Desktop size */
-  width: auto;
-  display: block;
-  object-fit: contain;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-/* Subtle interaction (optional but premium) */
-.logo-link:hover .logo-img {
-  transform: translateY(-1px);
-  opacity: 0.95;
-}
-@media (max-width: 768px) {
-  .logo-img {
-    height: 100px;
-  }
-}
 
   /* =========================================================
    HERO SECTION – BASE LAYOUT
@@ -169,9 +138,9 @@
 ========================================================= */
 
 .hero-text h1 {
-  font-size: clamp(3.5rem, 6vw, 6rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 1.05;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -2px;
   background: linear-gradient(90deg, #fff, #a6ffe2);
   -webkit-background-clip: text;
@@ -344,4 +313,65 @@
     animation: slideFade 0.9s ease forwards;
   }
 }
+/* =========================================
+   HERO POSITION PATCH (STYLE PRESERVED)
+   Only adjusts alignment/spacing
+========================================= */
 
+/* Better full-height behavior across devices */
+.hero {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+/* Ensure container can truly center vertically */
+.hero-container {
+  min-height: 100%;
+}
+
+/* Tablet: keep left vibe but stop awkward vertical drift */
+@media (max-width: 1024px) {
+  .hero-container {
+    align-items: center;     /* balanced vertical center */
+    padding: 0 6%;
+  }
+}
+
+/* Mobile: center the hero content (no style changes) */
+@media (max-width: 768px) {
+
+  /* Override the bottom-pin behavior */
+  .hero-container {
+    align-items: center !important;   /* replaces flex-end */
+    padding-bottom: 0 !important;     /* removes the push-down */
+  }
+
+  /* Keep your glass panel look, just place it nicely */
+  .hero-text {
+    margin: 0 auto;                   /* centers the block */
+  }
+
+  /* Keep pagination visible and avoid crowding */
+  .hero .swiper-pagination {
+    bottom: 18px !important;          /* slightly higher */
+  }
+}
+
+/* Small phones: keep everything inside viewport neatly */
+@media (max-width: 420px) {
+  .hero-container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .hero-text {
+    max-width: 520px;                 /* same as your mobile max */
+  }
+}
+@media (max-width: 768px){
+  .hero-container{
+    align-items: center !important;
+    padding-bottom: 0 !important;
+    padding-top: 14px;  /* subtle lift */
+  }
+}
